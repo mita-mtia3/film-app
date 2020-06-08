@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+
+ // Page init event
+    document.addEventListener('init', function(event) {
+      var page = event.target;
+
+// 最初の選択
+// 色の選択へ
+      if (page.matches('#select-page')) {
+
+        page.querySelector('#color-btn').onclick = function() {
+          document.querySelector('#navigator').pushPage('color-select-page.html');
+        };
+
+      } else if (page.matches('#color-select-page')) {
+
+        page.querySelector('#top-btn').onclick = function() {
+          document.querySelector('#navigator').popPage();
+        };
+
+      }
+
+  // 気分の選択へ
+      if (page.matches('#select-page')) {
+
+        page.querySelector('#mood-btn').onclick = function() {
+          document.querySelector('#navigator').pushPage('mood-select-page.html');
+        };
+
+        } else if (page.matches('#mood-select-page')) {
+
+        page.querySelector('#top-btn').onclick = function() {
+          document.querySelector('#navigator').popPage({times: 2});
+        };
+      }
+   // ジャンルの選択へ
+      if (page.matches('#select-page')) {
+
+        page.querySelector('#genre-btn').onclick = function() {
+          document.querySelector('#navigator').pushPage('genre-select-page.html');
+        };
+
+        } else if (page.matches('#genre-select-page')) {
+
+        page.querySelector('#top-btn').onclick = function() {
+          document.querySelector('#navigator').popPage({times: 3});
+        };
+       }
+
+    // 数字
+   // 数字の選択へ(色)
+      if (page.matches('#color-select-page')) {
+
+        page.querySelector('.color-select-btn').onclick = function() {
+          document.querySelector('#navigator').pushPage('number-color-page.html');
+        };
+
+        } else if (page.matches('#number-color-page')) {
+
+        page.querySelector('#top-btn').onclick = function() {
+          document.querySelector('#navigator').popPage({times: 2});
+        };
+        }
+
+    // 数字の選択へ（気分）
+       if (page.matches('#mood-select-page')) {
+
+        page.querySelector('.mood-select-btn').onclick = function() {
+          document.querySelector('#navigator').pushPage('number-mood-page.html');
+        };
+
+        } else if (page.matches('#number-mood-page')) {
+
+        page.querySelector('#top-btn').onclick = function() {
+          document.querySelector('#navigator').popPage({times: 3});
+        };
+        }
+
+      // 数字の選択へ（ジャンル）
+       if (page.matches('#genre-select-page')) {
+
+          page.querySelector('.genre-select-btn').onclick = function() {
+            document.querySelector('#navigator').pushPage('number-genre-page.html');
+          };
+
+          } else if (page.matches('#number-genre-page')) {
+
+          page.querySelector('#top-btn').onclick = function() {
+            document.querySelector('#navigator').popPage({times: 4});
+         };
+        }
+
+      // 作品紹介
+      // 作品紹介(色)
+       if (page.matches('#number-color-page')) {
+
+          page.querySelector('.number-color-btn').onclick = function() {
+            document.querySelector('#navigator').pushPage('recommend-page.html');
+          };
+
+          } else if (page.matches('#reccomend-page')) {
+
+          page.querySelector('#top-btn').onclick = function() {
+            document.querySelector('#navigator').popPage({times: 3});
+          };
+          }
+
+       // 作品紹介(気分)
+       if (page.matches('#number-mood-page')) {
+
+          page.querySelector('.number-mood-btn').onclick = function() {
+            document.querySelector('#navigator').pushPage('recommend-page.html');
+          };
+
+          } else if (page.matches('#reccomend-page')) {
+
+          page.querySelector('#top-btn').onclick = function() {
+            document.querySelector('#navigator').popPage({times: 3});
+          };
+          }
+        
+      // 作品紹介(ジャンル)
+       if (page.matches('#number-genre-page')) {
+
+          page.querySelector('.number-genre-btn').onclick = function() {
+            document.querySelector('#navigator').pushPage('recommend-page.html');
+          };
+
+          } else if (page.matches('#reccomend-page')) {
+
+          page.querySelector('#top-btn').onclick = function() {
+            document.querySelector('#navigator').popPage({times: 3});
+          };
+          }
+       
+        // baldキャストがいた場合のみ表示したいページ
+
+    });
+
+    if (ons.platform.isIPhoneX()) {
+      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
+      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
+    }
+  </script>
+</head>
+<body>
+  <ons-navigator id="navigator" page="select-page.html"></ons-navigator>
+<!-- TOPページ -->
+  <ons-template id="select-page.html">
+    <ons-page id="select-page">
+      <ons-toolbar>
+        <div class="center">選択</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>どれか選択してください</p>
+          <div class="select-btn">
+            <ons-button id="color-btn">色</ons-button>
+            <ons-button id="mood-btn">気分</ons-button>
+            <ons-button id="genre-btn">ジャンル</ons-button>
+          </div>
+     </ons-page>
+  </ons-template>
+<!-- 色選択 -->
+  <ons-template id="color-select-page.html">
+    <ons-page id="color-select-page">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>TOP</ons-back-button></div>
+        <div class="center">色</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>色を選択してください</p>
+        <div class="color-select-btn">
+          <ons-button id="red-btn">Red</ons-button>
+          <ons-button id="blue-btn">Blue</ons-button>
+          <ons-button id="yellow-btn">Yellow</ons-button>
+          <ons-button id="green-btn">Green</ons-button>
+          <ons-button id="white-btn">White</ons-button>
+          <ons-button id="black-btn">Black</ons-button>
+          <ons-button id="other">Other</ons-button>
+        </div>
+        <ons-button id="top-btn">TOPページ</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+<!-- 気分を選択 -->
+  <ons-template id="mood-select-page.html">
+    <ons-page id="mood-select-page">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>TOP</ons-back-button></div>
+        <div class="center">気分</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>気分を選択してください</p>
+        <div class="mood-select-btn">
+          <ons-button id="mood-btn1">1.沈みたい</ons-button>
+          <ons-button id="mood-btn2">2.晴れやか</ons-button>
+          <ons-button id="mood-btn3">3.あたま空っぽ</ons-button>
+          <ons-button id="mood-btn4">4.泣く</ons-button>
+          <ons-button id="mood-btn5">5.考える</ons-button>
+          <ons-button id="mood-btn6">6.美</ons-button>
+          <ons-button id="mood-btn7">7.ドキドキ</ons-button>
+          <ons-button id="mood-btn8">8.困惑</ons-button>
+          <ons-button id="mood-btn9">9.軽やか</ons-button>
+        </div>
+        <ons-button id="top-btn">TOPページ</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+  <!-- ジャンルを選択 -->
+  <ons-template id="genre-select-page.html">
+    <ons-page id="genre-select-page">
+      <ons-toolbar>
+        <div class="left"><ons-back-button>TOP</ons-back-button></div>
+        <div class="center">ジャンル</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>ジャンルを選択してください</p>
+        <div class="genre-select-btn">
+          <ons-button id="genre-btn1">1.アクション</ons-button>
+          <ons-button id="genre-btn2">2.SF</ons-button>
+          <ons-button id="genre-btn3">3.ファンタジー</ons-button>
+          <ons-button id="genre-btn4">4.ドラマ</ons-button>
+          <ons-button id="genre-btn5">5.青春</ons-button>
+          <ons-button id="genre-btn6">6.学校</ons-button>
+          <ons-button id="genre-btn7">7.音</ons-button>
+          <ons-button id="genre-btn8">8.アニメ</ons-button>
+          <ons-button id="genre-btn9">9.ミステリー</ons-button>
+          <ons-button id="genre-btn10">10.サスペンス</ons-button>
+          <ons-button id="genre-btn11">11.クライム</ons-button>
+          <ons-button id="genre-btn12">12.コメディ</ons-button>
+          <ons-button id="genre-btn13">13.ドキュメンタリ</ons-button>
+          <ons-button id="genre-btn14">14.ホラー</ons-button>
+          <ons-button id="genre-btn15">15.スパイ</ons-button>
+          <ons-button id="genre-btn16">16.恋愛</ons-button>
+        </div>
+        <ons-button id="top-btn">TOPページ</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+
+<!-- 数字なりなんなりランダムで選択(色) -->
+<ons-template id="number-color-page.html">
+  <ons-page id="number-color-page">
+    <ons-toolbar>
+      <div class="left"><ons-back-button>色選択</ons-back-button></div>
+      <div class="center">どれか</div>
+    </ons-toolbar>
+
+    <div class="content" style="text-align: center">
+      <p>どれか選択してください</p>
+      <div class="number-color-btn">
+        <ons-button id="1c">1</ons-button>
+        <ons-button id="2c">2</ons-button>
+        <ons-button id="3c">3</ons-button>
+        <ons-button id="4c">4</ons-button>
+        <ons-button id="5c">5</ons-button>
+      </div>
+      <ons-button id="top-btn">TOPページ</ons-button>
+    </div>
+  </ons-page>
+</ons-template>
+<!-- 数字なりなんなりランダムで選択(気分) -->
+<ons-template id="number-mood-page.html">
+  <ons-page id="number-mood-page">
+    <ons-toolbar>
+      <div class="left"><ons-back-button>気分選択</ons-back-button></div>
+      <div class="center">どれか</div>
+    </ons-toolbar>
+
+    <div class="content" style="text-align: center">
+      <p>どれか選択してください</p>
+      <div class="number-mood-btn">
+        <ons-button id="1m">1</ons-button>
+        <ons-button id="2m">2</ons-button>
+        <ons-button id="3m">3</ons-button>
+        <ons-button id="4m">4</ons-button>
+        <ons-button id="5m">5</ons-button>
+      </div>
+      <ons-button id="top-btn">TOPページ</ons-button>
+    </div>
+  </ons-page>
+</ons-template>
+<!-- 数字なりなんなりランダムで選択(ジャンル) -->
+<ons-template id="number-genre-page.html">
+  <ons-page id="number-genre-page">
+    <ons-toolbar>
+      <div class="left"><ons-back-button>ジャンル選択</ons-back-button></div>
+      <div class="center">どれか</div>
+    </ons-toolbar>
+
+    <div class="content" style="text-align: center">
+      <p>どれか選択してください</p>
+      <div class="number-genre-btn">
+        <ons-button id="1j">1</ons-button>
+        <ons-button id="2j">2</ons-button>
+        <ons-button id="3j">3</ons-button>
+        <ons-button id="4j">4</ons-button>
+        <ons-button id="5j">5</ons-button>
+      </div>
+      <ons-button id="top-btn">TOPページ</ons-button>
+    </div>
+  </ons-page>
+</ons-template>
+
+  <!-- 作品表示 -->
+  <ons-template id="recommend-page.html">
+    <ons-page id="recommend-page">
+      <ons-toolbar>
+        <div class="center">おすすめ</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p id="recommend-film">『-------』</p>
+        
+        <ons-button id="top-btn">TOPページ</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+</body>
+</html>

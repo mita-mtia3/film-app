@@ -1,0 +1,24 @@
+/**/
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.select-btn {
+  display: block;
+  text-align: center;
+  position: relative;
+  
+  
+
+}
+
+#top-btn {
+  text-align: center;
+  
+}
+
+
+
