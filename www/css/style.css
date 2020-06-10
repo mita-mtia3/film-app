@@ -1,31 +1,49 @@
 
 body {
-  color: #3e687d
+  color: #3e687d;
 }
 
-/* .center {
-  color: #70769d
-} */
+
+.center, .content, .ff, .left, #top-btn{
+  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+} 
+
+
+.center {
+  color: #3e687d;
+}
 
 .content {
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  color: #3e687d;
+  
 }
 
-
+.fukidashi {
+  display: inline-block;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
 
 #top-btn {
   text-align: center;
-  background-color: #c5b2d6;
+  background-color: #c5a3cb;
   width: 150px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  /* background: -moz-linear-gradient(top, #dcc8dc, #c5a3cb 30%, #9944cc 60%, #748af8);
+  background: -webkit-linear-gradient(top, #dcc8dc, #c5a3cb 30%, #9944cc 60%, #748af8 );
+  background: linear-gradient(to bottom, #dcc8dc, #c5a3cb 30%, #9944cc 60%, #748af8); */
 }
 
 .select-btn {
+  font-size: 20px;
   display: block;
   text-align: center;
   position: relative;
@@ -36,6 +54,7 @@ body {
 }
 
 .color-select-btn {
+  font-size: 20px;
   display: block;
   text-align: center;
   position: relative;
@@ -44,9 +63,43 @@ body {
   width: 120px;
 }
 
+/* ＜色選択＞ボタンの色 */
+#red-btn {
+  background-color: tomato;
+}
+
+#blue-btn {
+  background-color: #00a0dc;
+}
+
+#yellow-btn {
+  background-color: #ffe556;
+}
+
+#green-btn {
+  background-color: #28a44a;
+}
+
+#white-btn {
+  background-color:  white;
+  color: gray
+}
+
+#black-btn {
+  background: #5b5c76;
+}
+
+#other {
+  background-color: #aeb5dc;
+  color: gray;
+}
+
+
+
 
 
 .mood-select-btn {
+  font-size: 20px;
   display: block;
   text-align: left;
   padding-left: 30px;
@@ -58,13 +111,14 @@ body {
 }
 
 .genre-select-btn {
+  font-size: 20px;
   display: block;
   text-align: left;
   padding-left: 30px;
   position: relative;
   margin: 0 auto;
   background-color: #aeb5dc;
-  width: 80%;
+  width: 75%;
   
 }
 .number-color {
@@ -72,7 +126,6 @@ body {
 }
 .number-color-btn {
   display: inline-block;
-  position: relative;
   width: 45px;
   height: 45px;
   margin: 20px auto;
@@ -101,6 +154,25 @@ body {
   margin: 20px auto;
   border-radius: 50%;
   background-color: #aeb5dc;
+}
+
+.icon {
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: 40px;
+  bottom: 80px;
+}
+
+.next {
+  display: none;
+}
+
+.back {
+  margin-bottom: 40px;
+}
+
+#recommend-film {
+  font-size: 35px;
 }
 
 

@@ -11,153 +11,13 @@
   <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
   <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
 
-  <script>
-
- // Page init event
-    document.addEventListener('init', function(event) {
-      var page = event.target;
-
-// 最初の選択
-
-// 色
-// 色の選択へ
-    if (page.matches('#select-page')) {
-
-      page.querySelector('#color-btn').onclick = function() {
-        document.querySelector('#navigator').pushPage('color-select-page.html');
-      };
-
-    } else if (page.matches('#color-select-page')) {
-
-      page.querySelector('#top-btn').onclick = function() {
-        document.querySelector('#navigator').popPage();
-      };
-
-    }
-
-// 数字の選択へ(色)
-    if (page.matches('#color-select-page')) {
-
-      page.querySelector('.color-select-btn').onclick = function() {
-        document.querySelector('#navigator').pushPage('number-color-page.html');
-      };
-
-      } else if (page.matches('#number-color-page')) {
-
-      page.querySelector('#top-btn').onclick = function() {
-        document.querySelector('#navigator').popPage({times: 2});
-      };
-      }
-
-// 作品紹介(色)
-      if (page.matches('#number-color-page')) {
-
-        page.querySelector('.number-color-btn').onclick = function() {
-          document.querySelector('#navigator').pushPage('recommend-page.html');
-        };
-
-        } else if (page.matches('#reccomend-page')) {
-
-        page.querySelector('#top-btn').onclick = function() {
-          document.querySelector('#navigator').popPage({times: 3});
-        };
-        }
-  // 気分
-  // 気分の選択へ
-
-    if (page.matches('#select-page')) {
-
-      page.querySelector('#mood-btn').onclick = function() {
-        document.querySelector('#navigator').pushPage('mood-select-page.html');
-      };
-
-      } else if (page.matches('#mood-select-page')) {
-
-      page.querySelector('#top-btn').onclick = function() {
-        document.querySelector('#navigator').popPage();
-      };
-    }
-
-  // 数字の選択へ（気分）
-    if (page.matches('#mood-select-page')) {
-
-        page.querySelector('.mood-select-btn').onclick = function() {
-          document.querySelector('#navigator').pushPage('number-mood-page.html');
-        };
-
-        } else if (page.matches('#number-mood-page')) {
-
-        page.querySelector('#top-btn').onclick = function() {
-          document.querySelector('#navigator').popPage({times: 2});
-        };
-        }
-
-    // 作品紹介(気分)
-      if (page.matches('#number-mood-page')) {
-
-        page.querySelector('.number-mood-btn').onclick = function() {
-          document.querySelector('#navigator').pushPage('recommend-page.html');
-        };
-
-        } else if (page.matches('#reccomend-page')) {
-
-        page.querySelector('#top-btn').onclick = function() {
-          document.querySelector('#navigator').popPage({times: 3});
-        };
-        }
-  // ジャンル
-  // ジャンルの選択へ
-      if (page.matches('#select-page')) {
-
-        page.querySelector('#genre-btn').onclick = function() {
-          document.querySelector('#navigator').pushPage('genre-select-page.html');
-        };
-
-        } else if (page.matches('#genre-select-page')) {
-
-        page.querySelector('#top-btn').onclick = function() {
-          document.querySelector('#navigator').popPage();
-        };
-       }
-
-    // 数字の選択へ（ジャンル）
-       if (page.matches('#genre-select-page')) {
-
-          page.querySelector('.genre-select-btn').onclick = function() {
-            document.querySelector('#navigator').pushPage('number-genre-page.html');
-          };
-
-          } else if (page.matches('#number-genre-page')) {
-
-          page.querySelector('#top-btn').onclick = function() {
-            document.querySelector('#navigator').popPage({times: 2});
-         };
-        }
-        
-    // 作品紹介(ジャンル)
-       if (page.matches('#number-genre-page')) {
-
-          page.querySelector('.number-genre-btn').onclick = function() {
-            document.querySelector('#navigator').pushPage('recommend-page.html');
-          };
-
-          } else if (page.matches('#reccomend-page')) {
-
-          page.querySelector('#top-btn').onclick = function() {
-            document.querySelector('#navigator').popPage({times: 3});
-          };
-          }
-       
-        // baldキャストがいた場合のみ表示したいページ
-
-    });
-
-    if (ons.platform.isIPhoneX()) {
-      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
-      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
-    }
-  </script>
+  <script src="js/colorlist.js"></script>
+  <script src="js/moodlist.js"></script>
+  <script src="js/genrelist.js"></script>
+  <script src="js/script.js"></script>
+  
 </head>
 <body>
   <ons-navigator id="navigator" page="select-page.html"></ons-navigator>
@@ -171,10 +31,11 @@
 
       <div class="content" style="text-align: center">
         <p>どれか選択してください</p>
+        <img class="fukidashi" src="img/ふきだし.png">
           <div>
-            <ons-button class="select-btn" id="color-btn">色</ons-button><br>
-            <ons-button class="select-btn" id="mood-btn">気分</ons-button><br>
-            <ons-button class="select-btn" id="genre-btn">ジャンル</ons-button>
+            <ons-button class="select-btn ff" id="color-btn">色</ons-button><br>
+            <ons-button class="select-btn ff" id="mood-btn">気分</ons-button><br>
+            <ons-button class="select-btn ff" id="genre-btn">ジャンル</ons-button>
           </div>
      </ons-page>
   </ons-template>
@@ -188,17 +49,18 @@
 
       <div class="content" style="text-align: center">
         <p >色を選択してください</p>
+        <img class="fukidashi" src="img/ふきだし.png">
         <div>
-          <ons-button class="color-select-btn" id="red-btn">Red</ons-button><br>
-          <ons-button class="color-select-btn" id="blue-btn">Blue</ons-button><br>
-          <ons-button class="color-select-btn" id="yellow-btn">Yellow</ons-button><br>
-          <ons-button class="color-select-btn" id="green-btn">Green</ons-button><br>
-          <ons-button class="color-select-btn" id="white-btn">White</ons-button><br>
-          <ons-button class="color-select-btn" id="black-btn">Black</ons-button><br>
-          <ons-button class="color-select-btn" id="other">Other</ons-button><br>
+          <ons-button class="color-select-btn ff" id="red-btn">Red</ons-button><br>
+          <ons-button class="color-select-btn ff" id="blue-btn">Blue</ons-button><br>
+          <ons-button class="color-select-btn ff" id="yellow-btn">Yellow</ons-button><br>
+          <ons-button class="color-select-btn ff" id="green-btn">Green</ons-button><br>
+          <ons-button class="color-select-btn ff" id="white-btn">White</ons-button><br>
+          <ons-button class="color-select-btn ff" id="black-btn">Black</ons-button><br>
+          <ons-button class="color-select-btn ff" id="other">Other</ons-button><br>
+          <ons-button id="top-btn">TOPページ</ons-button>
         </div>
-        <ons-button id="top-btn">TOPページ</ons-button>
-      </div>
+        </div>
     </ons-page>
   </ons-template>
 
@@ -212,19 +74,20 @@
 
       <div class="content" style="text-align: center">
         <p>気分を選択してください</p>
+        <img class="fukidashi" src="img/ふきだし.png">
         <div>
-          <ons-button class="mood-select-btn" id="mood-btn1">1.沈みたい</ons-button><br>
-          <ons-button class="mood-select-btn" id="mood-btn2">2.晴れやか</ons-button><br>
-          <ons-button class="mood-select-btn" id="mood-btn3">3.あたま空っぽ</ons-button><br>
-          <ons-button class="mood-select-btn" id="mood-btn4">4.泣く</ons-button><br>
-          <ons-button class="mood-select-btn" id="mood-btn5">5.考える</ons-button><br>
-          <ons-button class="mood-select-btn" id="mood-btn6">6.美</ons-button><br>
-          <ons-button class="mood-select-btn" id="mood-btn7">7.ドキドキ</ons-button><br>
-          <ons-button class="mood-select-btn" id="mood-btn8">8.困惑</ons-button><br>
-          <ons-button class="mood-select-btn" id="mood-btn9">9.軽やか</ons-button><br>
+          <ons-button class="mood-select-btn ff" id="mood-btn1">1.&ensp;沈みたい</ons-button><br>
+          <ons-button class="mood-select-btn ff" id="mood-btn2">2.&ensp;晴れやか</ons-button><br>
+          <ons-button class="mood-select-btn ff" id="mood-btn3">3.&ensp;あたま空っぽ</ons-button><br>
+          <ons-button class="mood-select-btn ff" id="mood-btn4">4.&ensp;泣く</ons-button><br>
+          <ons-button class="mood-select-btn ff" id="mood-btn5">5.&ensp;考える</ons-button><br>
+          <ons-button class="mood-select-btn ff" id="mood-btn6">6.&ensp;美</ons-button><br>
+          <ons-button class="mood-select-btn ff" id="mood-btn7">7.&ensp;ドキドキ</ons-button><br>
+          <ons-button class="mood-select-btn ff" id="mood-btn8">8.&ensp;困惑</ons-button><br>
+          <ons-button class="mood-select-btn ff" id="mood-btn9">9.&ensp;軽やか</ons-button><br>
+          <ons-button id="top-btn">TOPページ</ons-button>
         </div>
-        <ons-button id="top-btn">TOPページ</ons-button>
-      </div>
+        </div>
     </ons-page>
   </ons-template>
 
@@ -238,25 +101,26 @@
 
       <div class="content" style="text-align: center">
         <p>ジャンルを選択してください</p>
+        <img class="fukidashi" src="img/ふきだし.png">
         <div>
-          <ons-button class="genre-select-btn" id="genre-btn1">1.アクション</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn2">2.SF</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn3">3.ファンタジー</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn4">4.ドラマ</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn5">5.青春</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn6">6.学校</ons-button><br>
-          <ons-button class="genre-select-btn"id="genre-btn7">7.音</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn8">8.アニメ</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn9">9.ミステリー</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn10">10.サスペンス</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn11">11.クライム</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn12">12.コメディ</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn13">13.ドキュメンタリ</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn14">14.ホラー</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn15">15.スパイ</ons-button><br>
-          <ons-button class="genre-select-btn" id="genre-btn16">16.恋愛</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn1">1.&ensp;アクション</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn2">2.&ensp;SF</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn3">3.&ensp;ファンタジー</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn4">4.&ensp;ドラマ</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn5">5.&ensp;青春</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn6">6.&ensp;学校</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn7">7.&ensp;音</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn8">8.&ensp;アニメ</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn9">9.&ensp;ミステリー</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn10">10.&ensp;サスペンス</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn11">11.&ensp;クライム</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn12">12.&ensp;コメディ</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn13">13.&ensp;ドキュメンタリー</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn14">14.&ensp;ホラー</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn15">15.&ensp;スパイ</ons-button><br>
+          <ons-button class="genre-select-btn ff" id="genre-btn16">16.&ensp;恋愛</ons-button><br>
+          <ons-button id="top-btn">TOPページ</ons-button>
         </div>
-        <ons-button id="top-btn">TOPページ</ons-button>
       </div>
     </ons-page>
   </ons-template>
@@ -271,14 +135,15 @@
 
     <div class="content" style="text-align: center">
       <p>どれか選択してください</p>
+      <img class="fukidashi" src="img/ふきだし.png">
         <div>
-          <ons-button class="number-color-btn" id="1c">1</ons-button><br>
-          <ons-button class="number-color-btn" id="2c">2</ons-button><br>
-          <ons-button class="number-color-btn" id="3c">3</ons-button><br>
-          <ons-button class="number-color-btn" id="4c">4</ons-button><br>
-          <ons-button class="number-color-btn" id="5c">5</ons-button><br>
+          <ons-button class="number-color-btn ff" id="1c">1</ons-button><br>
+          <ons-button class="number-color-btn ff" id="2c">2</ons-button><br>
+          <ons-button class="number-color-btn ff" id="3c">3</ons-button><br>
+          <ons-button class="number-color-btn ff" id="4c">4</ons-button><br>
+          <ons-button class="number-color-btn ff" id="5c">5</ons-button><br>
+          <ons-button id="top-btn">TOPページ</ons-button>
         </div>
-      <ons-button id="top-btn">TOPページ</ons-button>
     </div>
   </ons-page>
 </ons-template>
@@ -292,14 +157,15 @@
 
     <div class="content" style="text-align: center">
       <p>どれか選択してください</p>
+      <img class="fukidashi" src="img/ふきだし.png">
         <div>
-          <ons-button class="number-mood-btn" id="1m">1</ons-button><br>
-          <ons-button class="number-mood-btn" id="2m">2</ons-button><br>
-          <ons-button class="number-mood-btn" id="3m">3</ons-button><br>
-          <ons-button class="number-mood-btn" id="4m">4</ons-button><br>
-          <ons-button class="number-mood-btn" id="5m">5</ons-button><br>
+          <ons-button class="number-mood-btn ff" id="1m">1</ons-button><br>
+          <ons-button class="number-mood-btn ff" id="2m">2</ons-button><br>
+          <ons-button class="number-mood-btn ff" id="3m">3</ons-button><br>
+          <ons-button class="number-mood-btn ff" id="4m">4</ons-button><br>
+          <ons-button class="number-mood-btn ff" id="5m">5</ons-button><br>
+          <ons-button id="top-btn">TOPページ</ons-button>
         </div>
-      <ons-button id="top-btn">TOPページ</ons-button>
     </div>
   </ons-page>
 </ons-template>
@@ -313,14 +179,15 @@
 
     <div class="content" style="text-align: center">
       <p>どれか選択してください</p>
+      <img class="fukidashi" src="img/ふきだし.png">
       <div>
-        <ons-button class="number-genre-btn" id="1g">1</ons-button><br>
-        <ons-button class="number-genre-btn" id="2g">2</ons-button><br>
-        <ons-button class="number-genre-btn" id="3g">3</ons-button><br>
-        <ons-button class="number-genre-btn" id="4g">4</ons-button><br>
-        <ons-button class="number-genre-btn" id="5g">5</ons-button><br>
+        <ons-button class="number-genre-btn ff" id="1g">1</ons-button><br>
+        <ons-button class="number-genre-btn ff" id="2g">2</ons-button><br>
+        <ons-button class="number-genre-btn ff" id="3g">3</ons-button><br>
+        <ons-button class="number-genre-btn ff" id="4g">4</ons-button><br>
+        <ons-button class="number-genre-btn ff" id="5g">5</ons-button><br>
+        <ons-button id="top-btn">TOPページ</ons-button>
       </div>
-      <ons-button id="top-btn">TOPページ</ons-button>
     </div>
   </ons-page>
 </ons-template>
@@ -334,13 +201,22 @@
 
       <div class="content" style="text-align: center">
         <p id="recommend-film">『-------』</p>
-        
+      <!-- 真ん中あたりに画像を出せたらうれしい -->
+        <div class="back"><img src="img/p_da0158_m_da01584.jpg"></div>
+        <div>
+          <a class="icon" href="https://filmarks.com/"><img src="img/白熊アイコン3.png" alt="フィルマークスのサイト"></a>
+          <a class="icon" id="tomato-icon" href="https://www.rottentomatoes.com/"><img src="img/トマトのアイコン.png" alt="ロッテントマトのサイト"></a>
+        </div>
+        <div>
+          <a class="next"><img src="img/プレゼントのフリーアイコン素材.png"></a>
+        </div>
         <ons-button id="top-btn">TOPページ</ons-button>
       </div>
     </ons-page>
   </ons-template>
    
-  <!-- ※キャスト -->
+<!-- あったりなかったり -->
+<!-- ※キャスト -->
   <ons-template id="bald-cast-page.html">
     <ons-page id="bald-cast-page">
       <ons-toolbar>
@@ -349,7 +225,9 @@
 
       <div class="content" style="text-align: center">
         <p id="bald-cast-name">『〇〇〇』</p>
-        
+        <a href=""><img src=""></a>
+        <a class="icon" href="https://filmarks.com/"><img src="img/白熊アイコン3.png" alt="フィルマークスのサイト"></a>
+        <a class="icon" id="IMDb-icon" href="https://www.imdb.com/"><img src="img/DBのアイコン.png" alt="IMDbのサイト"></a>
         <ons-button id="top-btn">TOPページ</ons-button>
       </div>
     </ons-page>
