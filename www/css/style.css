@@ -164,15 +164,23 @@ body {
 }
 
 .next {
-  display: none;
+  /* display: none; */
 }
 
 .back {
   margin-bottom: 40px;
 }
 
+.anyway {
+  
+}
+
 #recommend-film {
   font-size: 35px;
+}
+
+#bald-cast-name {
+  font-size: 30px;
 }
 
 

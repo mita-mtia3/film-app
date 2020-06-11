@@ -17,7 +17,7 @@
   <script src="js/moodlist.js"></script>
   <script src="js/genrelist.js"></script>
   <script src="js/script.js"></script>
-  
+
 </head>
 <body>
   <ons-navigator id="navigator" page="select-page.html"></ons-navigator>
@@ -51,13 +51,13 @@
         <p >色を選択してください</p>
         <img class="fukidashi" src="img/ふきだし.png">
         <div>
-          <ons-button class="color-select-btn ff" id="red-btn">Red</ons-button><br>
-          <ons-button class="color-select-btn ff" id="blue-btn">Blue</ons-button><br>
-          <ons-button class="color-select-btn ff" id="yellow-btn">Yellow</ons-button><br>
-          <ons-button class="color-select-btn ff" id="green-btn">Green</ons-button><br>
-          <ons-button class="color-select-btn ff" id="white-btn">White</ons-button><br>
-          <ons-button class="color-select-btn ff" id="black-btn">Black</ons-button><br>
-          <ons-button class="color-select-btn ff" id="other">Other</ons-button><br>
+          <ons-button class="color-select-btn ff" id="red-btn" data-color="R">Red</ons-button><br>
+          <ons-button class="color-select-btn ff" id="blue-btn" data-color="B">Blue</ons-button><br>
+          <ons-button class="color-select-btn ff" id="yellow-btn" data-color="Y">Yellow</ons-button><br>
+          <ons-button class="color-select-btn ff" id="green-btn" data-color="G">Green</ons-button><br>
+          <ons-button class="color-select-btn ff" id="white-btn" data-color="W">White</ons-button><br>
+          <ons-button class="color-select-btn ff" id="black-btn" data-color="B">Black</ons-button><br>
+          <ons-button class="color-select-btn ff" id="other" data-color="N">Other</ons-button><br>
           <ons-button id="top-btn">TOPページ</ons-button>
         </div>
         </div>
@@ -193,16 +193,21 @@
 </ons-template>
 
   <!-- 作品表示 -->
+  <!-- ででーん -->
   <ons-template id="recommend-page.html">
     <ons-page id="recommend-page">
       <ons-toolbar>
+        <div class="left"><ons-back-button>数字選択</ons-back-button></div>
         <div class="center">おすすめ</div>
       </ons-toolbar>
 
       <div class="content" style="text-align: center">
-        <p id="recommend-film">『-------』</p>
+      <!-- 作品名を表示する -->
+        <p id="recommend-film">『』</p>
       <!-- 真ん中あたりに画像を出せたらうれしい -->
-        <div class="back"><img src="img/p_da0158_m_da01584.jpg"></div>
+      <!-- きっと全部は無理だから運 -->
+        <!-- <div class="back"><img src="img/p_da0158_m_da01584.jpg"></div> -->
+        <div class="back"><img src="film-img/(500)日のサマー.jpg"></div>
         <div>
           <a class="icon" href="https://filmarks.com/"><img src="img/白熊アイコン3.png" alt="フィルマークスのサイト"></a>
           <a class="icon" id="tomato-icon" href="https://www.rottentomatoes.com/"><img src="img/トマトのアイコン.png" alt="ロッテントマトのサイト"></a>
@@ -214,20 +219,24 @@
       </div>
     </ons-page>
   </ons-template>
-   
-<!-- あったりなかったり -->
+
+<!-- とびきりの -->
+<!-- あったりなかったり 基本は非表示-->
 <!-- ※キャスト -->
   <ons-template id="bald-cast-page.html">
     <ons-page id="bald-cast-page">
       <ons-toolbar>
+        <div class="left"><ons-back-button>おすすめ</ons-back-button></div>
         <div class="center">キャスト</div>
       </ons-toolbar>
 
       <div class="content" style="text-align: center">
-        <p id="bald-cast-name">『〇〇〇』</p>
-        <a href=""><img src=""></a>
-        <a class="icon" href="https://filmarks.com/"><img src="img/白熊アイコン3.png" alt="フィルマークスのサイト"></a>
-        <a class="icon" id="IMDb-icon" href="https://www.imdb.com/"><img src="img/DBのアイコン.png" alt="IMDbのサイト"></a>
+        <p id="bald-cast-name">`☆${}`</p>
+        <div class="anyway"><img src="bald-img/ステイサム.png"></div>
+        <div>
+          <a class="icon" href="https://filmarks.com/"><img src="img/白熊アイコン3.png" alt="フィルマークスのサイト"></a>
+          <a class="icon" id="IMDb-icon" href="https://www.imdb.com/"><img src="img/DBのアイコン.png" alt="IMDbのサイト"></a>
+        </div>
         <ons-button id="top-btn">TOPページ</ons-button>
       </div>
     </ons-page>

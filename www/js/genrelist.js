@@ -95,17 +95,17 @@
     "actor": "6"
   },
   {
-    "title": "Blue",
+    "title": "BLUE",
     "mood": "1",
     "actor": ""
   },
   {
-    "title": "Blue",
+    "title": "BLUE",
     "mood": "5",
     "actor": ""
   },
   {
-    "title": "Blue",
+    "title": "BLUE",
     "mood": "8",
     "actor": ""
   },
@@ -135,12 +135,12 @@
     "actor": "21"
   },
   {
-    "title": "X-MEN:ファースト・ジェネレーション",
+    "title": "X-MENファースト・ジェネレーション",
     "mood": "5",
     "actor": "4"
   },
   {
-    "title": "X-MEN:ファースト・ジェネレーション",
+    "title": "X-MENファースト・ジェネレーション",
     "mood": "7",
     "actor": "4"
   },
@@ -210,17 +210,17 @@
     "actor": ""
   },
   {
-    "title": "イエスマン”YES”は人生のパスワード",
+    "title": "イエスマン",
     "mood": "2",
     "actor": ""
   },
   {
-    "title": "イエスマン”YES”は人生のパスワード",
+    "title": "イエスマン",
     "mood": "3",
     "actor": ""
   },
   {
-    "title": "イエスマン”YES”は人生のパスワード",
+    "title": "イエスマン",
     "mood": "9",
     "actor": ""
   },

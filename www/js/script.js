@@ -1,3 +1,5 @@
+let state = {};
+
 // Page init event
 document.addEventListener('init', function(event) {
   var page = event.target;
@@ -23,10 +25,13 @@ if (page.matches('#select-page')) {
 }
 
 // 数字の選択へ(色)
+  state.type = "color";
+
   if (page.matches('#color-select-page')) {
     
     document.querySelectorAll('.color-select-btn').forEach(function (selected) {
      selected.onclick = function() {
+       state.color = selected.getAttribute('data-color');
       document.querySelector('#navigator').pushPage('number-color-page.html') ;
     };
   });
@@ -38,7 +43,9 @@ if (page.matches('#select-page')) {
   };
   }
 
+// 色の中でランダム
 // 作品紹介(色)
+
     if (page.matches('#number-color-page')) {
     
     document.querySelectorAll('.number-color-btn').forEach(function (selected) {
@@ -46,14 +53,20 @@ if (page.matches('#select-page')) {
       document.querySelector('#navigator').pushPage('recommend-page.html');
     };
   });
+  
 
     } else if (page.matches('#recommend-page')) {
-
+      
     page.querySelector('#top-btn').onclick = function() {
       document.querySelector('#navigator').popPage({times: 3});
+
+  // とりあえず書いた  
+    let infoElementArray = colorList.filter(element => element.color === state.color);
+    let infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
     };
     }
-// 気分
+
+// (気分)
 // 気分の選択へ
 
 if (page.matches('#select-page')) {
@@ -71,6 +84,7 @@ if (page.matches('#select-page')) {
 }
 
 // 数字の選択へ（気分）
+  state.type = "mood";
 
   if (page.matches('#mood-select-page')) {
     
@@ -87,6 +101,7 @@ if (page.matches('#select-page')) {
     };
     }
 
+// 気分の中でランダム
 // 作品紹介(気分)
   if (page.matches('#number-mood-page')) {
     
@@ -100,9 +115,14 @@ if (page.matches('#select-page')) {
 
     page.querySelector('#top-btn').onclick = function() {
       document.querySelector('#navigator').popPage({times: 3});
+
+  // とりあえず書いた  
+    let infoElementArray = moodList.filter(element => element.mood === state.mood);
+    let infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
     };
     }
-// ジャンル
+
+// (ジャンル)
 // ジャンルの選択へ
   if (page.matches('#select-page')) {
 
@@ -118,6 +138,8 @@ if (page.matches('#select-page')) {
    }
 
 // 数字の選択へ（ジャンル）
+    state.type = "genre";
+
     if (page.matches('#genre-select-page')) {
       
       document.querySelectorAll('.genre-select-btn').forEach(function (selected) {
@@ -132,6 +154,7 @@ if (page.matches('#select-page')) {
      };
     }
     
+// ジャンルの中でランダム
 // 作品紹介(ジャンル)
       if (page.matches('#number-genre-page')) {
         
@@ -145,10 +168,28 @@ if (page.matches('#select-page')) {
 
       page.querySelector('#top-btn').onclick = function() {
         document.querySelector('#navigator').popPage({times: 3});
+
+     // とりあえず書いた
+      let infoElementArray = genreList.filter(element => element.genre === state.genre);
+      let infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
       };
       }
    
-    // baldキャストがいた場合のみ表示したいページ
+// baldキャストがいた場合のみ表示したいページ
+      if (page.matches('#recommend-page')) {
+              
+        document.querySelectorAll('.next').forEach(function (selected) {
+        selected.onclick = function() {
+          document.querySelector('#navigator').pushPage('bald-cast-page.html');
+        };
+      });
+
+      } else if (page.matches('#bald-cast-page')) {
+
+      page.querySelector('#top-btn').onclick = function() {
+        document.querySelector('#navigator').popPage({times: 4});
+      };
+      }
 
 });
 
