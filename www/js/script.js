@@ -39,17 +39,18 @@ document.addEventListener('init', function (event) {
       document.querySelector('#navigator').popPage({ times: 2 });
     }
     // 作品紹介（number-color-pageからrecommend-pageへ）
-    // 作品タイトルと画像を表示
-    // 色の中でランダムに作品表示
     document.querySelectorAll('.number-color-btn').forEach(function (selected) {
       selected.onclick = function () {
         document.querySelector('#navigator').pushPage('recommend-page.html');
       };
     })
-
+    
+    // 作品タイトルと画像を表示
+    // （色の中でランダムに作品表示）
+  } else if (page.matches('#recommend-page')) { 
+    document.querySelector('#recommend-film-title')
+  
     // トップボタン押したら戻る（recommend-pageから最初の選択画面へ）
-  } else if (page.matches('#recommend-page')) {
-
     page.querySelector('#top-btn').onclick = function () {
       document.querySelector('#navigator').popPage({ times: 3 });
 
@@ -79,26 +80,29 @@ document.addEventListener('init', function (event) {
     state.type = "mood";
     document.querySelectorAll('.mood-select-btn').forEach(function (selected) {
       selected.onclick = function () {
+        state.mood = selected.getAttribute('data-mood');
         document.querySelector('#navigator').pushPage('number-mood-page.html');
       };
     })
 
     // トップボタン押したら戻る（number-mood-pageから最初の選択画面へ）
   } else if (page.matches('#number-mood-page')) {
+
     page.querySelector('#top-btn').onclick = function () {
       document.querySelector('#navigator').popPage({ times: 2 });
     }
     // 作品紹介（number-mood-pageからrecommend-pageへ）
-    // 作品タイトルと画像を表示
-    // 気分の中でランダムに作品表示
     document.querySelectorAll('.number-mood-btn').forEach(function (selected) {
       selected.onclick = function () {
         document.querySelector('#navigator').pushPage('recommend-page.html');
       };
     })
+    
+    // 作品タイトルと画像を表示
+    // 気分の中でランダムに作品表示
+  } else if (page.matches('#recommend-page')) {
 
     // トップボタン押したら戻る（recommend-pageから最初の選択画面へ）
-  } else if (page.matches('#recommend-page')) {
     page.querySelector('#top-btn').onclick = function () {
       document.querySelector('#navigator').popPage({ times: 3 });
 
@@ -121,33 +125,38 @@ document.addEventListener('init', function (event) {
 
     // トップボタン押したら戻る（genre-select-pageから最初の選択画面へ）
   } else if (page.matches('#genre-select-page')) {
+
     page.querySelector('#top-btn').onclick = function () {
+
       document.querySelector('#navigator').popPage();
     }
     // 数字の選択（genre-select-pageからnumber-genre-pageへ）
     state.type = "genre";
     document.querySelectorAll('.genre-select-btn').forEach(function (selected) {
       selected.onclick = function () {
+        state.genre = selected.getAttribute('data-genre');
         document.querySelector('#navigator').pushPage('number-genre-page.html');
       };
     })
 
     // トップボタン押したら戻る（number-genre-pageから最初の選択画面へ）
   } else if (page.matches('#number-genre-page')) {
+
     page.querySelector('#top-btn').onclick = function () {
       document.querySelector('#navigator').popPage({ times: 2 });
     }
     // 作品紹介（number-genre-pageからrecommend-pageへ）
-    // 作品タイトルと画像を表示
-    // ジャンルの中でランダムに作品表示
     document.querySelectorAll('.number-genre-btn').forEach(function (selected) {
       selected.onclick = function () {
         document.querySelector('#navigator').pushPage('recommend-page.html');
       };
     })
+    
+    // 作品タイトルと画像を表示
+    // ジャンルの中でランダムに作品表示
+  } else if (page.matches('#recommend-page')) {
 
     // トップボタン押したら戻る（recommend-pageから最初の選択画面へ）
-  } else if (page.matches('#recommend-page')) {
     page.querySelector('#top-btn').onclick = function () {
       document.querySelector('#navigator').popPage({ times: 3 });
 
