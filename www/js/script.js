@@ -110,32 +110,42 @@ document.addEventListener('init', function (event) {
     // 作品タイトルと画像を表示
     // （色の中でランダムに作品表示）
   } else if (page.matches('#recommend-page')) {
-    
+    let infoElementArray = [];
+    let infoElement = {};
     // トップボタン押したら戻る（recommend-pageから最初の選択画面へ）
     page.querySelector('#top-btn').onclick = function () {
       document.querySelector('#navigator').popPage({ times: 3 });
     }
     if (state.type === "color") {
-      let infoElementArray = colorList.filter(element => element.color === state.color);
-      let infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
+      infoElementArray = colorList.filter(element => element.color === state.color);
+      infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
     } else if (state.type === "mood") {
-      let infoElementArray = moodList.filter(element => element.mood === state.mood);
-      let infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
+      infoElementArray = moodList.filter(element => element.mood === state.mood);
+      infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
     } else if (state.type === "genre") {
-      let infoElementArray = genreList.filter(element => element.genre === state.genre);
-      let infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
+      infoElementArray = genreList.filter(element => element.genre === state.genre);
+      infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
     };
 
-    let recommend = document.querySelector("#recommend-film-title");
-    recommend.textContent = infoElement.title;
+    let recommendT = document.querySelector('#recommend-film-title');
+    recommendT.textContent = infoElement.title;
+
+    // let recommendI = document.querySelector('#recommend-film-img');
     
-    // とりあえず書いた (表示はまだ)
+    
   }
 
+  // if (infoElement.actorが存在したら) {
+  //   ocument.querySelectorAll('.next').forEach(function (selected) {
+  //     selected.onclick = function () {
+  //       document.querySelector('#navigator').pushPage('bald-cast-page.html');
+  //     };
+  //   });
 
 
-  // baldキャストがいた場合のみ表示したいページ
-  // 写真もいれて
+  // 上にまとめることは可能？まとめたほうがいい？
+  // baldキャストがいた("actor"に値がある)場合のみ表示したいページ
+  // 写真を入れる
   if (page.matches('#recommend-page')) {
     document.querySelectorAll('.next').forEach(function (selected) {
       selected.onclick = function () {

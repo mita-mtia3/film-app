@@ -164,16 +164,13 @@ body {
 }
 
 .next {
-  /* display: none; */
+  display: none;
 }
 
 .back {
   margin-bottom: 40px;
 }
 
-.anyway {
-  
-}
 
 #recommend-film-title {
   font-size: 35px;
