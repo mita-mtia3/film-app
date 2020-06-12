@@ -127,11 +127,10 @@ document.addEventListener('init', function (event) {
       infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
     };
 
-    let recommendT = document.querySelector('#recommend-film-title');
-    recommendT.textContent = infoElement.title;
-
-    // let recommendI = document.querySelector('#recommend-film-img');
-    
+    let recommend = document.querySelector('#recommend-film-title');
+    let srcUrl = `film-img/${infoElement.title}.jpg`;
+    recommend.textContent = infoElement.title;
+    document.getElementById('recommend-film-img').src = srcUrl;
     
   }
 
