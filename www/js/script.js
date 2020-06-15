@@ -129,8 +129,10 @@ document.addEventListener('init', function (event) {
 
     let recommend = document.querySelector('#recommend-film-title');
     let srcUrl = `film-img/${infoElement.title}.jpg`;
-    recommend.textContent = infoElement.title;
+    let recommendComment = document.querySelector('#recommend-comment');
+    recommend.textContent = `『${infoElement.title}』`;
     document.getElementById('recommend-film-img').src = srcUrl;
+    recommendComment.textContent = `(${infoElement.comment})`;
     
   }
 

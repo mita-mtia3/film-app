@@ -2,891 +2,1069 @@
   {
     "title": "(500日)のサマー",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "IKEAに行きたくなる"
   },
   {
     "title": "007ゴールドフィンガー",
     "color": "N",
-    "actor": "20"
+    "actor": "20",
+    "comment": "詰めが甘い！"
   },
   {
     "title": "007スカイフォール",
     "color": "W",
-    "actor": "13"
+    "actor": "13",
+    "comment": "ダイナミックスパイ"
   },
   {
     "title": "007スペクター",
     "color": "B",
-    "actor": "13"
+    "actor": "13",
+    "comment": "眼鏡が活躍"
   },
   {
     "title": "17歳のカルテ",
     "color": "W",
-    "actor": ""
+    "actor": "",
+    "comment": "17歳じゃない"
   },
   {
     "title": "20センチュリーウーマン",
     "color": "W",
-    "actor": ""
+    "actor": "",
+    "comment": "アイデンティティの創出"
   },
   {
     "title": "365日のシンプルライフ",
     "color": "W",
-    "actor": ""
+    "actor": "",
+    "comment": "失恋、のち裸一貫生活"
   },
   {
     "title": "6才のボクが、大人になるまで。",
     "color": "G",
-    "actor": ""
+    "actor": "",
+    "comment": "12年間の記録"
   },
   {
     "title": "96時間",
     "color": "N",
-    "actor": "15"
+    "actor": "15",
+    "comment": "娘を救う"
   },
   {
     "title": "ANNIE",
     "color": "N",
-    "actor": "6"
+    "actor": "6",
+    "comment": "歌って踊る"
   },
   {
-    "title": "Blue",
+    "title": "BLUE",
     "color": "B",
-    "actor": ""
+    "actor": "",
+    "comment": "全編ブルー"
   },
   {
     "title": "JUNO",
     "color": "W",
-    "actor": "12"
+    "actor": "12",
+    "comment": "16歳、こどもを産む"
   },
   {
     "title": "SPY",
     "color": "R",
-    "actor": "1"
+    "actor": "1",
+    "comment": "はちゃめちゃスパイ映画"
   },
   {
     "title": "TIME",
     "color": "G",
-    "actor": "21"
+    "actor": "21",
+    "comment": "時は金なり。"
   },
   {
-    "title": "X-MEN:ファースト・ジェネレーション",
+    "title": "X-MEN ファースト・ジェネレーション",
     "color": "N",
-    "actor": "4"
+    "actor": "4",
+    "comment": "X-menのはじまり"
   },
   {
     "title": "アデル、ブルーは熱い色",
     "color": "B",
-    "actor": ""
+    "actor": "",
+    "comment": "熱い！"
   },
   {
     "title": "アトミック・ブロンド",
     "color": "W",
-    "actor": "4"
+    "actor": "4",
+    "comment": "強くて羨ましい"
   },
   {
     "title": "アドレナリン",
     "color": "R",
-    "actor": "1"
+    "actor": "1",
+    "comment": "ステイサムにしては下品"
   },
   {
     "title": "あの頃、ペニーレインと",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "おかっけのおかっけ"
   },
   {
     "title": "アメリ",
     "color": "G",
-    "actor": ""
+    "actor": "",
+    "comment": "中毒性あり"
   },
   {
     "title": "アメリカンサイコ",
     "color": "BL",
-    "actor": ""
+    "actor": "",
+    "comment": "風刺コメディでした"
   },
   {
-    "title": "イエスマン”YES”は人生のパスワード",
+    "title": "イエスマン",
     "color": "B",
-    "actor": ""
+    "actor": "",
+    "comment": "バランスが大事"
   },
   {
     "title": "イップ・マン 序章",
     "color": "BL",
-    "actor": "22"
+    "actor": "22",
+    "comment": "カンフーを習おう！"
   },
   {
     "title": "ウォーム・ボディーズ",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "ゾンビも悪くない"
   },
   {
     "title": "ウォールフラワー",
     "color": "G",
-    "actor": ""
+    "actor": "",
+    "comment": "あっち側にはいけない"
   },
   {
     "title": "ウルフ・オブ・ウォールストリート",
     "color": "Y",
-    "actor": ""
+    "actor": "",
+    "comment": "これが実話だとは"
   },
   {
     "title": "うる星やつら2 ビューティフル・ドリーマー",
     "color": "B",
-    "actor": ""
+    "actor": "",
+    "comment": "夢から覚めない"
   },
   {
     "title": "エクス・マキナ",
     "color": "N",
-    "actor": "23"
+    "actor": "23",
+    "comment": "夢が広がる"
   },
   {
     "title": "エクスペンダブルズ",
     "color": "Y",
-    "actor": "1,3"
+    "actor": "1,3",
+    "comment": "筋肉オールスターズ"
   },
   {
     "title": "エターナル・サンシャイン",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "記憶を消す"
   },
   {
     "title": "エル・トポ",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "意味がわからない"
   },
   {
     "title": "エレファント",
     "color": "Y",
-    "actor": ""
+    "actor": "",
+    "comment": "ただの一日だった"
   },
   {
     "title": "エンパイアレコード",
     "color": "B",
-    "actor": ""
+    "actor": "",
+    "comment": "楽しいレコード屋さん"
   },
   {
     "title": "オーシャンズ12",
     "color": "R",
-    "actor": "3"
+    "actor": "3",
+    "comment": "一生見ていたい"
   },
   {
     "title": "オリエント急行殺人事件",
     "color": "B",
-    "actor": "24"
+    "actor": "24",
+    "comment": "登場人物を把握して"
   },
   {
-    "title": "カフェソ・サエティ",
+    "title": "カフェ・ソサエティ",
     "color": "N",
-    "actor": "16"
+    "actor": "16",
+    "comment": "ウディアレンの夢"
   },
   {
     "title": "きっと、うまくいく",
     "color": "G",
-    "actor": ""
+    "actor": "",
+    "comment": "歌を除けば120分？"
   },
   {
     "title": "きっと、星のせいじゃない",
     "color": "G",
-    "actor": ""
+    "actor": "",
+    "comment": "とことんかなしい"
   },
   {
     "title": "キングスマン",
     "color": "N",
-    "actor": "11"
+    "actor": "11",
+    "comment": "武器もかっこいい"
   },
   {
     "title": "グッバイ、サマー",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "少年たちの逃避行"
   },
   {
     "title": "クラウドアトラス",
     "color": "B",
-    "actor": ""
+    "actor": "",
+    "comment": "繋がって一本の線"
   },
   {
     "title": "グランド・ブダペスト・ホテル",
     "color": "N",
-    "actor": "13"
+    "actor": "13",
+    "comment": "ビジュアルに反して難解"
   },
   {
     "title": "グラントリノ",
     "color": "BL",
-    "actor": ""
+    "actor": "",
+    "comment": "いいぞ、イーストウッド"
   },
   {
     "title": "ゲット・アウト",
     "color": "BL",
-    "actor": "25"
+    "actor": "25",
+    "comment": "こわい"
   },
   {
     "title": "コードネーム U.N.C.L.E.",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "英国とソ連と"
   },
   {
     "title": "ゴッド・ヘルプ・ザ・ガール",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "ベルセバの世界"
   },
   {
     "title": "この世界の片隅に",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "戦争映画に括れない"
   },
   {
     "title": "シェイプ・オブ・ウォーター",
     "color": "B",
-    "actor": ""
+    "actor": "",
+    "comment": "手話を覚えたくなる"
   },
   {
     "title": "シェフ 三ツ星フードトラック始めました",
     "color": "Y",
-    "actor": ""
+    "actor": "",
+    "comment": "キューバサンドが食べたい"
   },
   {
     "title": "シックス・センス",
     "color": "BL",
-    "actor": "3"
+    "actor": "3",
+    "comment": "第六感"
   },
   {
     "title": "ショーン・オブ・ザ・デッド",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "走るタイプのゾンビ"
   },
   {
-    "title": "シングストリート 未来へのうた",
+    "title": "シング・ストリート 未来へのうた",
     "color": "G",
-    "actor": ""
+    "actor": "",
+    "comment": "いい。"
   },
   {
     "title": "シンプル・シモン",
     "color": "Y",
-    "actor": ""
+    "actor": "",
+    "comment": "兄、恋人を探す"
   },
   {
     "title": "シンプルメン",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "Sonic Youthで踊る"
   },
   {
     "title": "スウィート17モンスター",
     "color": "R",
-    "actor": "9"
+    "actor": "9",
+    "comment": "17歳を拗らせる"
   },
   {
     "title": "スクール・オブ・ロック",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "最高。"
   },
   {
     "title": "ストレンジャー・ザン・パラダイス",
     "color": "BL",
-    "actor": ""
+    "actor": "",
+    "comment": "雰囲気だけ見てると寝る"
   },
   {
     "title": "スナッチ",
     "color": "N",
-    "actor": "1"
+    "actor": "1",
+    "comment": "ステイサムが若い"
   },
   {
     "title": "スプリット",
     "color": "W",
-    "actor": "4"
+    "actor": "4",
+    "comment": "多重人格の獣"
   },
   {
     "title": "スポットライト 世紀のスクープ",
     "color": "N",
-    "actor": "10"
+    "actor": "10",
+    "comment": "正義を願わずにはいられない"
   },
   {
     "title": "セッション",
     "color": "BL",
-    "actor": "12"
+    "actor": "12",
+    "comment": "ラ・ラ・ランドより好み"
   },
   {
     "title": "セレステ∞ジェシー",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "離婚したけど好き"
   },
   {
     "title": "ソーシャル・ネットワーク",
     "color": "B",
-    "actor": ""
+    "actor": "",
+    "comment": "やなやつっぽい"
   },
   {
     "title": "ソング・オブ・ザ・シー 海のうた",
     "color": "B",
-    "actor": ""
+    "actor": "",
+    "comment": "浄化される"
   },
   {
     "title": "ゾンビランド",
     "color": "Y",
-    "actor": "9"
+    "actor": "9",
+    "comment": "パワータイプのゾンビ"
   },
   {
-    "title": "ゾンビランド: ダブルタップ",
+    "title": "ゾンビランド ダブルタップ",
     "color": "Y",
-    "actor": "9"
+    "actor": "9",
+    "comment": "前作の10年後、揃い踏み！"
   },
   {
     "title": "ダークナイト",
     "color": "BL",
-    "actor": ""
+    "actor": "",
+    "comment": "ジョーカー出てるよ"
   },
   {
     "title": "ダージリン急行",
     "color": "G",
-    "actor": ""
+    "actor": "",
+    "comment": "3兄弟がインドで奔走"
   },
   {
     "title": "タイピスト！",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "タタタっと打ちたい"
   },
   {
     "title": "ダンサー、セルゲイ・ポルーニン 世界一優雅な野獣",
     "color": "W",
-    "actor": "26"
+    "actor": "26",
+    "comment": "天才の苦悩"
   },
   {
     "title": "ダンサー・イン・ザ・ダーク",
     "color": "BL",
-    "actor": ""
+    "actor": "",
+    "comment": "もうみたくない"
   },
   {
     "title": "チャーリーズ・エンジェル",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "チャーリーになりたい"
   },
   {
     "title": "つぐない",
     "color": "W",
-    "actor": "4"
+    "actor": "4",
+    "comment": "マカヴォイさんが青い"
   },
   {
     "title": "デスプルーフ in グラインドハウス",
     "color": "Y",
-    "actor": ""
+    "actor": "",
+    "comment": "タランティーノで一番好き"
   },
   {
     "title": "トゥルーマン・ショー",
     "color": "B",
-    "actor": "27"
+    "actor": "27",
+    "comment": "こんな世界はいやだ"
   },
   {
     "title": "トランスポーター",
     "color": "N",
-    "actor": "1"
+    "actor": "1",
+    "comment": "ハンドルさばきに惚れます"
   },
   {
     "title": "トレインスポッティング",
     "color": "N",
-    "actor": "28"
+    "actor": "28",
+    "comment": "ピチピチのTシャツかわいい"
   },
   {
     "title": "ナチュラル・ボーン・キラーズ",
     "color": "BL",
-    "actor": "9"
+    "actor": "9",
+    "comment": "生まれつき殺人鬼"
   },
   {
     "title": "ノッティングヒルの恋人",
     "color": "W",
-    "actor": ""
+    "actor": "",
+    "comment": "ヒューの目尻に注目"
   },
   {
     "title": "バーフバリ 王の凱旋",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "王を称えよ"
   },
   {
     "title": "バーレスク",
     "color": "BL",
-    "actor": "10"
+    "actor": "10",
+    "comment": "吉祥寺のピザ屋でよく流れていた"
   },
   {
     "title": "バイオハザード",
     "color": "R",
-    "actor": "29"
+    "actor": "29",
+    "comment": "ゾンビとは呼ばない"
   },
   {
     "title": "バグダッド・カフェ",
     "color": "B",
-    "actor": ""
+    "actor": "",
+    "comment": "母の好きな映画"
   },
   {
     "title": "はじまりのうた",
     "color": "N",
-    "actor": "30"
+    "actor": "30",
+    "comment": "街中で歌う"
   },
   {
     "title": "はじまりへの旅",
     "color": "G",
-    "actor": ""
+    "actor": "",
+    "comment": "家族でもみんなちがう人"
   },
   {
     "title": "パターソン",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "穏やかな日常、静寂"
   },
   {
     "title": "バタフライ・エフェクト",
     "color": "G",
-    "actor": ""
+    "actor": "",
+    "comment": "正解がわからない"
   },
   {
     "title": "バッド・チューニング",
     "color": "G",
-    "actor": ""
+    "actor": "",
+    "comment": "70年代アメリカの高校生は"
   },
   {
     "title": "バッドボーイズ",
     "color": "N",
-    "actor": "14"
+    "actor": "14",
+    "comment": "やんちゃな刑事"
   },
   {
-    "title": "バッファロー’66",
+    "title": "バッファロー'66",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "友達になりたくはない"
   },
   {
     "title": "パディントン",
     "color": "Y",
-    "actor": ""
+    "actor": "",
+    "comment": "なめちゃいけない"
   },
   {
     "title": "パフューム ある人殺しの物語",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "吸い込みたい"
   },
   {
     "title": "パプリカ",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "何度見てもわからない"
   },
   {
     "title": "ハリー・ポッターとアズカバンの囚人",
     "color": "BL",
-    "actor": ""
+    "actor": "",
+    "comment": "シリウスとルーピン先生"
   },
   {
     "title": "パルプ・フィクション",
     "color": "R",
-    "actor": "3"
+    "actor": "3",
+    "comment": "有名どころ。"
   },
   {
     "title": "パレードへようこそ",
     "color": "Y",
-    "actor": ""
+    "actor": "",
+    "comment": "自分たちのためにたたかう話"
   },
   {
     "title": "ピエロがお前をあざ笑う",
     "color": "BL",
-    "actor": ""
+    "actor": "",
+    "comment": "嘲笑われる"
   },
   {
     "title": "ビトレイヤー",
     "color": "B",
-    "actor": "11"
+    "actor": "11",
+    "comment": "トレーニングが酷"
   },
   {
     "title": "ビフォア・サンライズ 恋人までの距離",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "会話の垂れ流し"
   },
   {
     "title": "ファイト・クラブ",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "違和感に気付けなかった"
   },
   {
     "title": "ファンタスティック・プラネット",
     "color": "B",
-    "actor": ""
+    "actor": "",
+    "comment": "楽しいSF"
   },
   {
     "title": "フィリップ、きみを愛してる！",
     "color": "W",
-    "actor": ""
+    "actor": "",
+    "comment": "実話です。"
   },
   {
     "title": "フィルス",
     "color": "R",
-    "actor": "4"
+    "actor": "4",
+    "comment": "信用のおけない大人"
   },
   {
     "title": "フェリスはある朝突然に",
     "color": "W",
-    "actor": ""
+    "actor": "",
+    "comment": "見ればわかる面白さ"
   },
   {
     "title": "フォーカス",
     "color": "Y",
-    "actor": "14"
+    "actor": "14",
+    "comment": "スマートさに感服"
   },
   {
     "title": "プラダを着た悪魔",
     "color": "R",
-    "actor": "10"
+    "actor": "10",
+    "comment": "憧れないけど好き"
   },
   {
     "title": "ブラックパンサー",
     "color": "BL",
-    "actor": "＊"
+    "actor": "＊",
+    "comment": "原色の世界に魅了される"
   },
   {
     "title": "フラワーショウ！",
     "color": "Y",
-    "actor": "31"
+    "actor": "31",
+    "comment": "自然は庭作りの矛盾"
   },
   {
     "title": "ブレックファスト・クラブ",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "高校生のときに見たかった"
   },
   {
     "title": "ヘアスプレー",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "トラボルタがママ"
   },
   {
     "title": "ヘイトフル・エイト",
     "color": "N",
-    "actor": "7"
+    "actor": "7",
+    "comment": "そんなに長くない"
   },
   {
     "title": "ベイビー・ドライバー",
     "color": "N",
-    "actor": "6"
+    "actor": "6",
+    "comment": "音楽の煽りがすごい"
   },
   {
     "title": "ペネロピ",
     "color": "G",
-    "actor": "4"
+    "actor": "4",
+    "comment": "キュートなマカヴォイさん"
   },
   {
     "title": "ホーリー・マウンテン",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "意味がわからない"
   },
   {
     "title": "ホット・ファズ 俺たちスーパーポリスメン！",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "シリアス気取ってもコメディ"
   },
   {
     "title": "ホドロフスキーのDUNE",
     "color": "W",
-    "actor": ""
+    "actor": "",
+    "comment": "90歳の野心"
   },
   {
     "title": "ボヘミアン・ラプソディ",
     "color": "Y",
-    "actor": ""
+    "actor": "",
+    "comment": "Queen知らなくても大丈夫"
   },
   {
     "title": "ポリスアカデミー",
     "color": "R",
-    "actor": "32"
+    "actor": "32",
+    "comment": "役が揃ってる"
   },
   {
     "title": "ホワイトハウス・ダウン",
     "color": "W",
-    "actor": "6"
+    "actor": "6",
+    "comment": "どうなるホワイトハウス"
   },
   {
     "title": "マイ・インターン",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "先人の知恵は大事"
   },
   {
     "title": "マイ・プライベート・アイダホ",
     "color": "N",
-    "actor": "33"
+    "actor": "33",
+    "comment": "キアヌ美しい"
   },
   {
     "title": "マイ・ブルーベリー・ナイツ",
     "color": "B",
-    "actor": "34"
+    "actor": "34",
+    "comment": "ブルーベリーパイが食べたい"
   },
   {
     "title": "マッドマックス",
     "color": "BL",
-    "actor": ""
+    "actor": "",
+    "comment": "妻、空気を読んで"
   },
   {
     "title": "マッドマックス 怒りのデス・ロード",
     "color": "Y",
-    "actor": "42"
+    "actor": "42",
+    "comment": "デスロードで散る"
   },
   {
     "title": "ミス・ペレグリンと奇妙なこどもたち",
     "color": "G",
-    "actor": "7"
+    "actor": "7",
+    "comment": "奇妙だなあ"
   },
   {
     "title": "ミスター・ノーバディー",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "ひとり何役？"
   },
   {
     "title": "ミックマック",
     "color": "Y",
-    "actor": "35"
+    "actor": "35",
+    "comment": "不思議なテンポ"
   },
   {
     "title": "ミッドナイト・イン・パリ",
     "color": "B",
-    "actor": "16"
+    "actor": "16",
+    "comment": "歴史が分かるともっと楽しい"
   },
   {
     "title": "ミニミニ大作戦",
     "color": "Y",
-    "actor": "1"
+    "actor": "1",
+    "comment": "原題は”The Italian Job”"
   },
   {
     "title": "ミレニアム3部作",
     "color": "BL",
-    "actor": ""
+    "actor": "",
+    "comment": "続けてみてほしい"
   },
   {
     "title": "ムード・インディゴ うたかたの日々",
     "color": "G",
-    "actor": "17"
+    "actor": "17",
+    "comment": "肺に花が咲きます。"
   },
   {
     "title": "ムーンライズ・キングダム",
     "color": "Y",
-    "actor": "3"
+    "actor": "3",
+    "comment": "少年少女の駆け落ち"
   },
   {
     "title": "ムーンライト",
     "color": "B",
-    "actor": "36"
+    "actor": "36",
+    "comment": "思うことがあるかもしれない"
   },
   {
     "title": "メメント",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "よくわからなかった"
   },
   {
     "title": "メン・イン・ブラック",
     "color": "BL",
-    "actor": "14"
+    "actor": "14",
+    "comment": "ヘンな生物を倒す"
   },
   {
     "title": "モーターサイクル・ダイアリーズ",
     "color": "Y",
-    "actor": ""
+    "actor": "",
+    "comment": "ゲバラの若い頃"
   },
   {
     "title": "モーリス",
     "color": "G",
-    "actor": "18"
+    "actor": "18",
+    "comment": "好きな人は好き"
   },
   {
     "title": "モンスター上司",
     "color": "N",
-    "actor": "6"
+    "actor": "6",
+    "comment": "バカハラが一番きつい"
   },
   {
     "title": "ラ・ラ・ランド",
     "color": "B",
-    "actor": "12"
+    "actor": "12",
+    "comment": "夢のない話"
   },
   {
     "title": "ラッシュアワー",
     "color": "N",
-    "actor": "37"
+    "actor": "37",
+    "comment": "ジャッキーチェン"
   },
   {
     "title": "ラブ・アクチュアリー",
     "color": "R",
-    "actor": "15"
+    "actor": "15",
+    "comment": "ジョニ・ミッチェルを聴きましょう"
   },
   {
     "title": "ラブリーボーン",
     "color": "W",
-    "actor": "10"
+    "actor": "10",
+    "comment": "見てほしい"
   },
   {
     "title": "リザとキツネと恋する死者たち",
     "color": "G",
-    "actor": ""
+    "actor": "",
+    "comment": "やたら耳に残る歌"
   },
   {
     "title": "リトル・ダンサー",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "真剣だったら笑われない"
   },
   {
     "title": "リトル・ミス・サンシャイン",
     "color": "Y",
-    "actor": "38"
+    "actor": "38",
+    "comment": "おじいちゃんが最高"
   },
   {
     "title": "リリーのすべて",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "悩ましくて美しい"
   },
   {
     "title": "ルパン三世 カリオストロの城",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "クラリスかわいい"
   },
   {
     "title": "レイヤー・ケーキ",
     "color": "Y",
-    "actor": ""
+    "actor": "",
+    "comment": "いろんな人が出てる"
   },
   {
     "title": "レオン",
     "color": "R",
-    "actor": "39"
+    "actor": "39",
+    "comment": "レオンの植物はアグラオネマ"
   },
   {
     "title": "レディ・バード",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "苦しいけどおもしろい"
   },
   {
     "title": "ロッキー・ホラー・ショー",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "私は好き"
   },
   {
     "title": "ロック、ストック＆トゥー・スモーキング・バレルズ",
     "color": "Y",
-    "actor": "1"
+    "actor": "1",
+    "comment": "ステイサムのデビュー作！"
   },
   {
     "title": "ワールズ・エンド 酔っ払いが世界を救う！",
     "color": "Y",
-    "actor": ""
+    "actor": "",
+    "comment": "ひたすら飲酒"
   },
   {
     "title": "ワイルド・スピード",
     "color": "N",
-    "actor": "2"
+    "actor": "2",
+    "comment": "シリーズの足掛かり"
   },
   {
     "title": "ワイルド・スピード EURO MISSION",
     "color": "N",
-    "actor": "8"
+    "actor": "8",
+    "comment": "ロック様の活躍！"
   },
   {
     "title": "ワイルド・スピード ICE BREAK",
     "color": "N",
-    "actor": "2"
+    "actor": "2",
+    "comment": "ステイサム×赤ちゃん"
   },
   {
     "title": "ワイルド・スピード MAX",
     "color": "N",
-    "actor": "2"
+    "actor": "2",
+    "comment": "ドム、復讐に燃える"
   },
   {
     "title": "ワイルド・スピード MEGA MAX",
     "color": "N",
-    "actor": "5"
+    "actor": "5",
+    "comment": "テズ！！！"
   },
   {
     "title": "ワイルド・スピード SKY MISSION",
     "color": "N",
-    "actor": "2"
+    "actor": "2",
+    "comment": "一番感動するらしいです"
   },
   {
     "title": "ワイルド・スピード／スーパーコンボ",
     "color": "N",
-    "actor": "1,5"
+    "actor": "1,5",
+    "comment": "英と米のコントラスト"
   },
   {
     "title": "わたしは、ダニエルブレイク",
     "color": "Y",
-    "actor": "40"
+    "actor": "40",
+    "comment": "日本とも十分重なる"
   },
   {
     "title": "ワンダーストラック",
     "color": "B",
-    "actor": ""
+    "actor": "",
+    "comment": "不思議な話"
   },
   {
     "title": "鑑定士と顔のない依頼人",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "後味が悪い"
   },
   {
     "title": "顔たち、ところどころ",
     "color": "N",
-    "actor": "19"
+    "actor": "19",
+    "comment": "年の差を感じない"
   },
   {
     "title": "胸騒ぎの恋人",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "人誑しがかき乱す話"
   },
   {
     "title": "君の名前で僕を呼んで",
     "color": "B",
-    "actor": ""
+    "actor": "",
+    "comment": "美しい"
   },
   {
     "title": "犬ヶ島",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "日本？？"
   },
   {
     "title": "砂漠でサーモン・フィッシング",
     "color": "Y",
-    "actor": ""
+    "actor": "",
+    "comment": "砂漠に川をつくる"
   },
   {
     "title": "最強のふたり",
     "color": "N",
-    "actor": "17"
+    "actor": "17",
+    "comment": "いい関係性"
   },
   {
     "title": "少年は残酷な弓を射る",
     "color": "R",
-    "actor": ""
+    "actor": "",
+    "comment": "歪な親子関係"
   },
   {
     "title": "地球は女で回ってる",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "笑っちゃう"
   },
   {
-    "title": "追憶と踊りながら",
+    "title": "追憶と、踊りながら",
     "color": "W",
-    "actor": ""
+    "actor": "",
+    "comment": "救われる"
   },
   {
     "title": "東京ゴッドファーザーズ",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "クリスマスにみたい"
   },
   {
     "title": "特攻野郎Aチーム THE MOVIE",
     "color": "B",
-    "actor": "41"
+    "actor": "41",
+    "comment": "邦題が目障り"
   },
   {
     "title": "不思議惑星キン・ザ・ザ",
     "color": "BL",
-    "actor": ""
+    "actor": "",
+    "comment": "ロシアから砂漠の惑星へ"
   },
   {
     "title": "容疑者、ホアキン・フェニックス",
     "color": "BL",
-    "actor": "6"
+    "actor": "6",
+    "comment": "変わっている人"
   },
   {
     "title": "裏切りのサーカス",
     "color": "R",
-    "actor": "11"
+    "actor": "11",
+    "comment": "考察に次ぐ考察"
   },
   {
     "title": "恋する惑星",
     "color": "N",
-    "actor": ""
+    "actor": "",
+    "comment": "ストーカー肯定映画"
   }
 ]
