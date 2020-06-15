@@ -163,8 +163,8 @@ body {
   bottom: 80px;
 }
 
-.next {
-  display: none;
+.next-btn {
+  /* display: none; */
 }
 
 .back {
@@ -186,6 +186,12 @@ body {
 
 #bald-cast-name {
   font-size: 30px;
+}
+
+#bald-cast-img {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 

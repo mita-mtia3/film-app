@@ -134,21 +134,15 @@ document.addEventListener('init', function (event) {
     document.getElementById('recommend-film-img').src = srcUrl;
     recommendComment.textContent = `(${infoElement.comment})`;
     
-  }
+  } 
 
-  // if (infoElement.actorが存在したら) {
-  //   ocument.querySelectorAll('.next').forEach(function (selected) {
-  //     selected.onclick = function () {
-  //       document.querySelector('#navigator').pushPage('bald-cast-page.html');
-  //     };
-  //   });
 
 
   // 上にまとめることは可能？まとめたほうがいい？
   // baldキャストがいた("actor"に値がある)場合のみ表示したいページ
   // 写真を入れる
   if (page.matches('#recommend-page')) {
-    document.querySelectorAll('.next').forEach(function (selected) {
+    document.querySelectorAll('.next-btn').forEach(function (selected) {
       selected.onclick = function () {
         document.querySelector('#navigator').pushPage('bald-cast-page.html');
       };
@@ -159,6 +153,7 @@ document.addEventListener('init', function (event) {
 
     page.querySelector('#top-btn').onclick = function () {
       document.querySelector('#navigator').popPage({ times: 4 });
+    
     };
   };
 

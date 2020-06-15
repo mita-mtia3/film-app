@@ -1,6 +1,6 @@
 ﻿let colorList = [
   {
-    "title": "(500日)のサマー",
+    "title": "(500)日のサマー",
     "color": "N",
     "actor": "",
     "comment": "IKEAに行きたくなる"
@@ -337,7 +337,7 @@
   },
   {
     "title": "ストレンジャー・ザン・パラダイス",
-    "color": "BL",
+    "color": "W",
     "actor": "",
     "comment": "雰囲気だけ見てると寝る"
   },
@@ -487,7 +487,7 @@
   },
   {
     "title": "バイオハザード",
-    "color": "R",
+    "color": "B",
     "actor": "29",
     "comment": "ゾンビとは呼ばない"
   },
@@ -576,7 +576,7 @@
     "comment": "自分たちのためにたたかう話"
   },
   {
-    "title": "ピエロがお前をあざ笑う",
+    "title": "ピエロがお前を嘲笑う",
     "color": "BL",
     "actor": "",
     "comment": "嘲笑われる"
@@ -750,7 +750,7 @@
     "comment": "奇妙だなあ"
   },
   {
-    "title": "ミスター・ノーバディー",
+    "title": "ミスター・ノーバディ",
     "color": "R",
     "actor": "",
     "comment": "ひとり何役？"
