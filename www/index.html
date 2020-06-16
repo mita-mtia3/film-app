@@ -1,9 +1,12 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
   <script src="lib/onsenui/js/onsenui.min.js"></script>
 
@@ -19,36 +22,52 @@
   <script src="js/script.js"></script>
 
 </head>
+
 <body>
-  <ons-navigator id="navigator" page="select-page.html"></ons-navigator>
-<!-- TOPページ -->
-<!-- 選択ページ -->
+  <ons-navigator id="navigator" page="first-page.html"></ons-navigator>
+
+  <!-- TOPページ -->
+  <ons-template id="first-page.html">
+    <ons-page id="first-page">
+      <div class="content" style="text-align: center">
+        <p>tapしてください</p>
+        <img class="fukidashi" src="img/ふきだし.png">
+        <ons-button class="tap" id="tap-btn">tap</ons-button>
+      </div>
+    </ons-page>
+  </ons-template>
+  <!-- 選択ページ -->
   <ons-template id="select-page.html">
     <ons-page id="select-page">
       <ons-toolbar>
+        <div class="left">
+          <ons-back-button>TOP</ons-back-button>
+        </div>
         <div class="center">選択</div>
       </ons-toolbar>
 
       <div class="content" style="text-align: center">
         <p>どれか選択してください</p>
         <img class="fukidashi" src="img/ふきだし.png">
-          <div>
-            <ons-button class="select-btn ff" id="color-btn">色</ons-button><br>
-            <ons-button class="select-btn ff" id="mood-btn">気分</ons-button><br>
-            <ons-button class="select-btn ff" id="genre-btn">ジャンル</ons-button>
-          </div>
-     </ons-page>
+        <div>
+          <ons-button class="select-btn ff" id="color-btn">色</ons-button><br>
+          <ons-button class="select-btn ff" id="mood-btn">気分</ons-button><br>
+          <ons-button class="select-btn ff" id="genre-btn">ジャンル</ons-button>
+        </div>
+    </ons-page>
   </ons-template>
-<!-- 色選択 -->
+  <!-- 色選択 -->
   <ons-template id="color-select-page.html">
     <ons-page id="color-select-page">
       <ons-toolbar>
-        <div class="left"><ons-back-button>TOP</ons-back-button></div>
+        <div class="left">
+          <ons-back-button>back</ons-back-button>
+        </div>
         <div class="center">色</div>
       </ons-toolbar>
 
       <div class="content" style="text-align: center">
-        <p >色を選択してください</p>
+        <p>色を選択してください</p>
         <img class="fukidashi" src="img/ふきだし.png">
         <div>
           <ons-button class="color-select-btn ff" id="red-btn" data-color="R">Red</ons-button><br>
@@ -60,15 +79,17 @@
           <ons-button class="color-select-btn ff" id="other" data-color="N">Other</ons-button><br>
           <ons-button id="top-btn">TOPページ</ons-button>
         </div>
-        </div>
+      </div>
     </ons-page>
   </ons-template>
 
-<!-- 気分を選択 -->
+  <!-- 気分を選択 -->
   <ons-template id="mood-select-page.html">
     <ons-page id="mood-select-page">
       <ons-toolbar>
-        <div class="left"><ons-back-button>TOP</ons-back-button></div>
+        <div class="left">
+          <ons-back-button>back</ons-back-button>
+        </div>
         <div class="center">気分</div>
       </ons-toolbar>
 
@@ -87,7 +108,7 @@
           <ons-button class="mood-select-btn ff" id="mood-btn9" data-mood="9">9.&ensp;軽やか</ons-button><br>
           <ons-button id="top-btn">TOPページ</ons-button>
         </div>
-        </div>
+      </div>
     </ons-page>
   </ons-template>
 
@@ -95,7 +116,9 @@
   <ons-template id="genre-select-page.html">
     <ons-page id="genre-select-page">
       <ons-toolbar>
-        <div class="left"><ons-back-button>TOP</ons-back-button></div>
+        <div class="left">
+          <ons-back-button>back</ons-back-button>
+        </div>
         <div class="center">ジャンル</div>
       </ons-toolbar>
 
@@ -125,17 +148,19 @@
     </ons-page>
   </ons-template>
 
-<!-- 数字なりなんなりランダムで選択(色) -->
-<ons-template id="number-color-page.html">
-  <ons-page id="number-color-page">
-    <ons-toolbar>
-      <div class="left"><ons-back-button>色選択</ons-back-button></div>
-      <div class="center">どれか</div>
-    </ons-toolbar>
+  <!-- 数字なりなんなりランダムで選択(色) -->
+  <ons-template id="number-color-page.html">
+    <ons-page id="number-color-page">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button>色選択</ons-back-button>
+        </div>
+        <div class="center">どれか</div>
+      </ons-toolbar>
 
-    <div class="content" style="text-align: center">
-      <p>どれか選択してください</p>
-      <img class="fukidashi" src="img/ふきだし.png">
+      <div class="content" style="text-align: center">
+        <p>どれか選択してください</p>
+        <img class="fukidashi" src="img/ふきだし.png">
         <div>
           <ons-button class="number-color-btn ff" id="1c">1</ons-button><br>
           <ons-button class="number-color-btn ff" id="2c">2</ons-button><br>
@@ -144,20 +169,22 @@
           <ons-button class="number-color-btn ff" id="5c">5</ons-button><br>
           <ons-button id="top-btn">TOPページ</ons-button>
         </div>
-    </div>
-  </ons-page>
-</ons-template>
-<!-- 数字なりなんなりランダムで選択(気分) -->
-<ons-template id="number-mood-page.html">
-  <ons-page id="number-mood-page">
-    <ons-toolbar>
-      <div class="left"><ons-back-button>気分選択</ons-back-button></div>
-      <div class="center">どれか</div>
-    </ons-toolbar>
+      </div>
+    </ons-page>
+  </ons-template>
+  <!-- 数字なりなんなりランダムで選択(気分) -->
+  <ons-template id="number-mood-page.html">
+    <ons-page id="number-mood-page">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button>気分選択</ons-back-button>
+        </div>
+        <div class="center">どれか</div>
+      </ons-toolbar>
 
-    <div class="content" style="text-align: center">
-      <p>どれか選択してください</p>
-      <img class="fukidashi" src="img/ふきだし.png">
+      <div class="content" style="text-align: center">
+        <p>どれか選択してください</p>
+        <img class="fukidashi" src="img/ふきだし.png">
         <div>
           <ons-button class="number-mood-btn ff" id="1m">1</ons-button><br>
           <ons-button class="number-mood-btn ff" id="2m">2</ons-button><br>
@@ -166,50 +193,57 @@
           <ons-button class="number-mood-btn ff" id="5m">5</ons-button><br>
           <ons-button id="top-btn">TOPページ</ons-button>
         </div>
-    </div>
-  </ons-page>
-</ons-template>
-<!-- 数字なりなんなりランダムで選択(ジャンル) -->
-<ons-template id="number-genre-page.html">
-  <ons-page id="number-genre-page">
-    <ons-toolbar>
-      <div class="left"><ons-back-button>ジャンル選択</ons-back-button></div>
-      <div class="center">どれか</div>
-    </ons-toolbar>
-
-    <div class="content" style="text-align: center">
-      <p>どれか選択してください</p>
-      <img class="fukidashi" src="img/ふきだし.png">
-      <div>
-        <ons-button class="number-genre-btn ff" id="1g">1</ons-button><br>
-        <ons-button class="number-genre-btn ff" id="2g">2</ons-button><br>
-        <ons-button class="number-genre-btn ff" id="3g">3</ons-button><br>
-        <ons-button class="number-genre-btn ff" id="4g">4</ons-button><br>
-        <ons-button class="number-genre-btn ff" id="5g">5</ons-button><br>
-        <ons-button id="top-btn">TOPページ</ons-button>
       </div>
-    </div>
-  </ons-page>
-</ons-template>
+    </ons-page>
+  </ons-template>
+  <!-- 数字なりなんなりランダムで選択(ジャンル) -->
+  <ons-template id="number-genre-page.html">
+    <ons-page id="number-genre-page">
+      <ons-toolbar>
+        <div class="left">
+          <ons-back-button>ジャンル選択</ons-back-button>
+        </div>
+        <div class="center">どれか</div>
+      </ons-toolbar>
+
+      <div class="content" style="text-align: center">
+        <p>どれか選択してください</p>
+        <img class="fukidashi" src="img/ふきだし.png">
+        <div>
+          <ons-button class="number-genre-btn ff" id="1g">1</ons-button><br>
+          <ons-button class="number-genre-btn ff" id="2g">2</ons-button><br>
+          <ons-button class="number-genre-btn ff" id="3g">3</ons-button><br>
+          <ons-button class="number-genre-btn ff" id="4g">4</ons-button><br>
+          <ons-button class="number-genre-btn ff" id="5g">5</ons-button><br>
+          <ons-button id="top-btn">TOPページ</ons-button>
+        </div>
+      </div>
+    </ons-page>
+  </ons-template>
 
   <!-- 作品表示 -->
   <ons-template id="recommend-page.html">
     <ons-page id="recommend-page">
       <ons-toolbar>
-        <div class="left"><ons-back-button>数字選択</ons-back-button></div>
+        <div class="left">
+          <ons-back-button>数字選択</ons-back-button>
+        </div>
         <div class="center">おすすめ</div>
       </ons-toolbar>
 
       <div class="content" style="text-align: center">
 
-      <!-- 作品名を表示する -->
+        <!-- 作品名を表示する -->
         <p id="recommend-film-title">『』</p>
-      <!-- 真ん中あたりに画像を出したい -->
+        <!-- 真ん中あたりに画像を出したい -->
         <img id="recommend-film-img" src=""></img>
-        <div><p id="recommend-comment">()</p></div>
+        <div>
+          <p id="recommend-comment">()</p>
+        </div>
         <div>
           <a class="icon" href="https://filmarks.com/"><img src="img/白熊アイコン3.png" alt="フィルマークスのサイト"></a>
-          <a class="icon" id="tomato-icon" href="https://www.rottentomatoes.com/"><img src="img/トマトのアイコン.png" alt="ロッテントマトのサイト"></a>
+          <a class="icon" id="tomato-icon" href="https://www.rottentomatoes.com/"><img src="img/トマトのアイコン.png"
+              alt="ロッテントマトのサイト"></a>
         </div>
         <div>
           <a class="next-btn"><img src="img/プレゼントのフリーアイコン素材.png"></a>
@@ -219,13 +253,15 @@
     </ons-page>
   </ons-template>
 
-<!-- とびきりの -->
-<!-- あったりなかったり 基本は非表示-->
-<!-- ※キャスト -->
+  <!-- とびきりの -->
+  <!-- あったりなかったり 基本は非表示-->
+  <!-- ※キャスト -->
   <ons-template id="bald-cast-page.html">
     <ons-page id="bald-cast-page">
       <ons-toolbar>
-        <div class="left"><ons-back-button>おすすめ</ons-back-button></div>
+        <div class="left">
+          <ons-back-button>おすすめ</ons-back-button>
+        </div>
         <div class="center">キャスト</div>
       </ons-toolbar>
 
@@ -241,4 +277,5 @@
     </ons-page>
   </ons-template>
 </body>
+
 </html>

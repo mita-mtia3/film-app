@@ -4,11 +4,15 @@ let state = {};
 document.addEventListener('init', function (event) {
   var page = event.target;
 
-  // TOPページできたらいいな
+  // TOPページ
+  if (page.matches('#first-page')) {
 
-
+    page.querySelector('#tap-btn').onclick = function () {
+      document.querySelector('#navigator').pushPage('select-page.html');
+    };
+  
   // 最初の選択
-  if (page.matches('#select-page')) {
+  } else if (page.matches('#select-page')) {
 
     // 色の選択（color-select-pageへ）
     page.querySelector('#color-btn').onclick = function () {
@@ -27,7 +31,7 @@ document.addEventListener('init', function (event) {
   } else if (page.matches('#color-select-page')) {
 
     page.querySelector('#top-btn').onclick = function () {
-      document.querySelector('#navigator').popPage();
+      document.querySelector('#navigator').popPage({times: 2});
     }
 
     // 数字の選択（color-select-pageからnumber-colo-pageへ）
@@ -43,7 +47,7 @@ document.addEventListener('init', function (event) {
     // トップボタン押したら戻る（number-color-pageから最初の選択画面へ）
 
     page.querySelector('#top-btn').onclick = function () {
-      document.querySelector('#navigator').popPage({ times: 2 });
+      document.querySelector('#navigator').popPage({ times: 3 });
     }
     // 作品紹介（number-color-pageからrecommend-pageへ）
     document.querySelectorAll('.number-color-btn').forEach(function (selected) {
@@ -55,7 +59,7 @@ document.addEventListener('init', function (event) {
   // トップボタン押したら戻る（mood-select-pageから最初の選択画面へ）
   } else if (page.matches('#mood-select-page')) {
     page.querySelector('#top-btn').onclick = function () {
-      document.querySelector('#navigator').popPage();
+      document.querySelector('#navigator').popPage({times: 2});
     }
     // 数字の選択（mood-select-pageからnumber-mood-pegeへ）
     state.type = "mood";
@@ -70,7 +74,7 @@ document.addEventListener('init', function (event) {
   } else if (page.matches('#number-mood-page')) {
 
     page.querySelector('#top-btn').onclick = function () {
-      document.querySelector('#navigator').popPage({ times: 2 });
+      document.querySelector('#navigator').popPage({ times: 3 });
     }
     // 作品紹介（number-mood-pageからrecommend-pageへ）
     document.querySelectorAll('.number-mood-btn').forEach(function (selected) {
@@ -83,7 +87,7 @@ document.addEventListener('init', function (event) {
   // トップボタン押したら戻る（genre-select-pageから最初の選択画面へ）
   } else if (page.matches('#genre-select-page')) {
     page.querySelector('#top-btn').onclick = function () {
-      document.querySelector('#navigator').popPage();
+      document.querySelector('#navigator').popPage({times: 2});
     }
     // 数字の選択（genre-select-pageからnumber-genre-pageへ）
     state.type = "genre";
@@ -97,7 +101,7 @@ document.addEventListener('init', function (event) {
     // トップボタン押したら戻る（number-genre-pageから最初の選択画面へ）
   } else if (page.matches('#number-genre-page')) {
     page.querySelector('#top-btn').onclick = function () {
-      document.querySelector('#navigator').popPage({ times: 2 });
+      document.querySelector('#navigator').popPage({ times: 3 });
     }
     // 作品紹介（number-genre-pageからrecommend-pageへ）
     document.querySelectorAll('.number-genre-btn').forEach(function (selected) {
@@ -114,8 +118,14 @@ document.addEventListener('init', function (event) {
     let infoElement = {};
     // トップボタン押したら戻る（recommend-pageから最初の選択画面へ）
     page.querySelector('#top-btn').onclick = function () {
-      document.querySelector('#navigator').popPage({ times: 3 });
+      document.querySelector('#navigator').popPage({ times: 4 });
     }
+      
+    document.querySelectorAll('.next-btn').forEach(function (selected) {
+      selected.onclick = function () {
+        document.querySelector('#navigator').pushPage('bald-cast-page.html');
+      };
+
     if (state.type === "color") {
       infoElementArray = colorList.filter(element => element.color === state.color);
       infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
@@ -134,25 +144,15 @@ document.addEventListener('init', function (event) {
     document.getElementById('recommend-film-img').src = srcUrl;
     recommendComment.textContent = `(${infoElement.comment})`;
     
-  } 
+  })
 
-
-
-  // 上にまとめることは可能？まとめたほうがいい？
   // baldキャストがいた("actor"に値がある)場合のみ表示したいページ
   // 写真を入れる
-  if (page.matches('#recommend-page')) {
-    document.querySelectorAll('.next-btn').forEach(function (selected) {
-      selected.onclick = function () {
-        document.querySelector('#navigator').pushPage('bald-cast-page.html');
-      };
-    });
-
+} else if (page.matches('#bald-cast-page')) {
+  
     // トップボタン押したら戻る（bald-cast-pageから最初の選択画面へ）
-  } else if (page.matches('#bald-cast-page')) {
-
     page.querySelector('#top-btn').onclick = function () {
-      document.querySelector('#navigator').popPage({ times: 4 });
+      document.querySelector('#navigator').popPage({ times: 5 });
     
     };
   };
