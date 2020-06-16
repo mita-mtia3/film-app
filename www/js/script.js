@@ -121,6 +121,7 @@ document.addEventListener('init', function (event) {
       document.querySelector('#navigator').popPage({ times: 4 });
     }
       
+    // actorになにかしらの値があったら
     document.querySelectorAll('.next-btn').forEach(function (selected) {
       selected.onclick = function () {
         document.querySelector('#navigator').pushPage('bald-cast-page.html');

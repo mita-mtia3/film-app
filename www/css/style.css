@@ -4,7 +4,7 @@ body {
 }
 
 
-.center, .content, .ff, .left, #top-btn{
+.center, .content, .ff, .left, #top-btn, .number-color-content{
   font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 } 
 
@@ -17,9 +17,15 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
   color: #3e687d;
-  
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.number-color-content, .number-genre-content, .number-mood-content {
+  color: #292929;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .fukidashi {
@@ -29,17 +35,60 @@ body {
   margin-bottom: 25px;
 }
 
+#first-page > div {
+  background: linear-gradient(to right, #42a0ff 0%, #42a0ff 10%, #ffb7b7 10%, #ffb7b7 90%, #42a0ff 90%, #42a0ff 100%);
+  opacity: 0.7;
+}
+
+#select-page > div {
+  background: #ffe556;
+}
+
+#color-select-page > div {
+  background: #7fd9d2;
+}
+
+#mood-select-page > div {
+  background: #dbedf0;
+}
+
+#genre-select-page > div {
+  background: #e2bea3;
+}
+
+#number-color-page > div {
+  /* background: #ffb2b2; */
+  background: #ea5550;
+}
+
+#number-mood-page > div {
+  /* background: #fff799; */
+  background: linear-gradient(to bottom, #0f2350 0%, #164a84 30%, #4d4398 50%, #393f4c 90%, #393f4c 100%);
+  ;
+}
+
+#number-genre-page > div {
+  /* background: #00ac97; */
+  background: #ffe556;
+}
+
+#recommend-page > div {
+  background: ;
+}
+
+.tap {
+  font-size: 32px;
+}
+
 #top-btn {
   text-align: center;
-  background-color: #c5a3cb;
+  background-color: #4d4398;
+  opacity: 0.7;
+  border-radius: 45%;
   width: 150px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
-  border-radius: 50%;
-  /* background: -moz-linear-gradient(top, #dcc8dc, #c5a3cb 30%, #9944cc 60%, #748af8);
-  background: -webkit-linear-gradient(top, #dcc8dc, #c5a3cb 30%, #9944cc 60%, #748af8 );
-  background: linear-gradient(to bottom, #dcc8dc, #c5a3cb 30%, #9944cc 60%, #748af8); */
 }
 
 .select-btn {
@@ -124,14 +173,38 @@ body {
 .number-color {
   text-align: center;
 }
-.number-color-btn {
+.number-color-btn, .number-genre-btn {
+  position: relative;
   display: inline-block;
   width: 45px;
   height: 45px;
-  margin: 20px auto;
+  margin: 0 auto 20px auto;
   border-radius: 50%;
-  background-color: #aeb5dc;
-  
+  background-color: #fff;
+  color: #202020;
+  font-family: fantasy;
+}
+
+.car {
+  position: absolute;
+  bottom: 320px;
+  opacity: 0.5;
+  right: 26px;
+  width: 30px;
+}
+
+.taiya {
+  position: absolute;
+  height: 150px;
+  width: 18px;
+  right: 32px;
+  bottom: 155px;
+  opacity: 0.6;
+}
+.pistol {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
 }
 
 .number-mood-btn {
@@ -145,16 +218,7 @@ body {
   background-color: #aeb5dc;
 }
 
-.number-genre-btn {
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  width: 45px;
-  height: 45px;
-  margin: 20px auto;
-  border-radius: 50%;
-  background-color: #aeb5dc;
-}
+
 
 .icon {
   display: inline-block;
@@ -164,7 +228,7 @@ body {
 }
 
 .next-btn {
-  /* display: none; */
+  display: none;
 }
 
 .back {
@@ -174,6 +238,7 @@ body {
 
 #recommend-film-title {
   font-size: 35px;
+  font-weight: normal;
   
 }
 
@@ -182,6 +247,11 @@ body {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 30px;
+}
+
+#recommend-comment {
+  font-size: 20px;
+  font-weight: normal;
 }
 
 #bald-cast-name {
