@@ -31,7 +31,7 @@ document.addEventListener('init', function (event) {
     // トップボタン押したら戻る（color-select-pageから最初の選択画面へ）
   } else if (page.matches('#color-select-page')) {
 
-    page.querySelector('#top-btn').onclick = function () {
+    page.querySelector('#top-btn1').onclick = function () {
       document.querySelector('#navigator').popPage({times: 2});
     }
 
@@ -47,7 +47,7 @@ document.addEventListener('init', function (event) {
   } else if (page.matches('#number-color-page')) {
     // トップボタン押したら戻る（number-color-pageから最初の選択画面へ）
 
-    page.querySelector('#top-btn').onclick = function () {
+    page.querySelector('#top-btn4').onclick = function () {
       document.querySelector('#navigator').popPage({ times: 3 });
     }
     // 作品紹介（number-color-pageからrecommend-pageへ）
@@ -59,7 +59,7 @@ document.addEventListener('init', function (event) {
   ///////////////////////////////////////////
   // トップボタン押したら戻る（mood-select-pageから最初の選択画面へ）
   } else if (page.matches('#mood-select-page')) {
-    page.querySelector('#top-btn').onclick = function () {
+    page.querySelector('#top-btn2').onclick = function () {
       document.querySelector('#navigator').popPage({times: 2});
     }
     // 数字の選択（mood-select-pageからnumber-mood-pegeへ）
@@ -74,7 +74,7 @@ document.addEventListener('init', function (event) {
     // トップボタン押したら戻る（number-mood-pageから最初の選択画面へ）
   } else if (page.matches('#number-mood-page')) {
 
-    page.querySelector('#top-btn').onclick = function () {
+    page.querySelector('#top-btn5').onclick = function () {
       document.querySelector('#navigator').popPage({ times: 3 });
     }
     // 作品紹介（number-mood-pageからrecommend-pageへ）
@@ -87,7 +87,7 @@ document.addEventListener('init', function (event) {
   /////////////////////////// 
   // トップボタン押したら戻る（genre-select-pageから最初の選択画面へ）
   } else if (page.matches('#genre-select-page')) {
-    page.querySelector('#top-btn').onclick = function () {
+    page.querySelector('#top-btn3').onclick = function () {
       document.querySelector('#navigator').popPage({times: 2});
     }
     // 数字の選択（genre-select-pageからnumber-genre-pageへ）
@@ -101,7 +101,7 @@ document.addEventListener('init', function (event) {
 
     // トップボタン押したら戻る（number-genre-pageから最初の選択画面へ）
   } else if (page.matches('#number-genre-page')) {
-    page.querySelector('#top-btn').onclick = function () {
+    page.querySelector('#top-btn6').onclick = function () {
       document.querySelector('#navigator').popPage({ times: 3 });
     }
     // 作品紹介（number-genre-pageからrecommend-pageへ）
@@ -118,7 +118,7 @@ document.addEventListener('init', function (event) {
     let infoElementArray = [];
     let infoElement = {};
     // トップボタン押したら戻る（recommend-pageから最初の選択画面へ）
-    page.querySelector('#top-btn').onclick = function () {
+    page.querySelector('#top-btn7').onclick = function () {
       document.querySelector('#navigator').popPage({ times: 4 });
     }
       
@@ -154,9 +154,12 @@ document.addEventListener('init', function (event) {
 } else if (page.matches('#bald-cast-page')) {
   
     // トップボタン押したら戻る（bald-cast-pageから最初の選択画面へ）
-    page.querySelector('#top-btn').onclick = function () {
+    page.querySelector('#top-btn8').onclick = function () {
       document.querySelector('#navigator').popPage({ times: 5 });
-    };
+    }
+    let srcUrlActor = `bald-img/${infoElement.title}.jpg`;
+    document.getElementById('bald').src = srcUrlActor;
+    ;
   };
 
 })

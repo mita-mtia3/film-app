@@ -26,15 +26,15 @@
 <body>
   <ons-navigator id="navigator" page="first-page.html"></ons-navigator>
 
-  <!-- TOPページ -->
+  <!-- TOPページ (タイピスト、希望のかなた）-->
   <ons-template id="first-page.html">
     <ons-page id="first-page">
-        <div class="content" id="top-page">
-          <!-- <p>tapしてください</p>
+      <div class="content" id="top-page">
+        <!-- <p>tapしてください</p>
           <img class="fukidashi" src="img/ふきだし.png"> -->
-          <a class="above-top"><img src="img/TOPにつかう.png"></a>
-          <a class="fuwafuwa" id="tap-btn"><img src="img/映写機.png"></a>
-          <a class="tap-here"><img src="img/TapHere.png"></a>
+        <a class="above-top"><img src="img/TOPにつかう.png"></a>
+        <a class="fuwafuwa" id="tap-btn"><img src="img/映写機.png"></a>
+        <a class="tap-here"><img src="img/TapHere.png"></a>
       </div>
     </ons-page>
   </ons-template>
@@ -56,9 +56,10 @@
           <ons-button class="select-btn ff" id="mood-btn">気分</ons-button><br>
           <ons-button class="select-btn ff" id="genre-btn">ジャンル</ons-button>
         </div>
+      </div>
     </ons-page>
   </ons-template>
-  <!-- 色選択 -->
+  <!-- 色選択 （オーメン）-->
   <ons-template id="color-select-page.html">
     <ons-page id="color-select-page">
       <ons-toolbar>
@@ -79,14 +80,14 @@
           <ons-button class="color-select-btn ff" id="white-btn" data-color="W">White</ons-button><br>
           <ons-button class="color-select-btn ff" id="black-btn" data-color="BL">Black</ons-button><br>
           <ons-button class="color-select-btn ff" id="other" data-color="N">Other</ons-button><br>
-          <ons-button id="top-btn">TOPへ</ons-button>
+          <ons-button id="top-btn1">TOPへ</ons-button>
           <img id="boy" src="img/色-back.png">
         </div>
       </div>
     </ons-page>
   </ons-template>
 
-  <!-- 気分を選択 -->
+  <!-- 気分を選択（ムーンライト） -->
   <ons-template id="mood-select-page.html">
     <ons-page id="mood-select-page">
       <ons-toolbar>
@@ -109,7 +110,7 @@
           <ons-button class="mood-select-btn ff" id="mood-btn7" data-mood="7">7.&ensp;ドキドキ</ons-button><br>
           <ons-button class="mood-select-btn ff" id="mood-btn8" data-mood="8">8.&ensp;困惑</ons-button><br>
           <ons-button class="mood-select-btn ff" id="mood-btn9" data-mood="9">9.&ensp;軽やか</ons-button><br>
-          <ons-button id="top-btn">TOPへ</ons-button>
+          <ons-button id="top-btn2">TOPへ</ons-button>
         </div>
       </div>
     </ons-page>
@@ -145,13 +146,13 @@
           <ons-button class="genre-select-btn ff" id="genre-btn14" data-genre="14">14.&ensp;ホラー</ons-button><br>
           <ons-button class="genre-select-btn ff" id="genre-btn15" data-genre="15">15.&ensp;スパイ</ons-button><br>
           <ons-button class="genre-select-btn ff" id="genre-btn16" data-genre="16">16.&ensp;恋愛</ons-button><br>
-          <ons-button id="top-btn">TOPページ</ons-button>
+          <ons-button id="top-btn3">TOPページ</ons-button>
         </div>
       </div>
     </ons-page>
   </ons-template>
 
-  <!-- 数字なりなんなりランダムで選択(色) -->
+  <!-- 数字なりなんなりランダムで選択(色)(ベイビードライバー) -->
   <ons-template id="number-color-page.html">
     <ons-page id="number-color-page">
       <ons-toolbar>
@@ -171,7 +172,7 @@
           <ons-button class="number-color-btn ff" id="3c">3</ons-button><br>
           <ons-button class="number-color-btn ff" id="4c">4</ons-button><br>
           <ons-button class="number-color-btn ff" id="5c">5</ons-button><br>
-          <ons-button id="top-btn">TOPへ</ons-button>
+          <ons-button id="top-btn4">TOPへ</ons-button>
           <img class="" id="taiya" src="img/タイヤ.png">
           <img class="" id="pistol" src="img/拳銃のアイコン.png">
         </div>
@@ -197,13 +198,13 @@
           <ons-button class="number-mood-btn ff" id="3m">3</ons-button><br>
           <ons-button class="number-mood-btn ff" id="4m">4</ons-button><br>
           <ons-button class="number-mood-btn ff" id="5m">5</ons-button><br>
-          <ons-button id="top-btn">TOPへ</ons-button>
-          <img class="town" src="img/街.png" style="width: 100%">
+          <ons-button id="top-btn5">TOPへ</ons-button>
+          <!-- <img class="town" src="img/街.png" style="width: 100%"> -->
         </div>
       </div>
     </ons-page>
   </ons-template>
-  <!-- 数字なりなんなりランダムで選択(ジャンル) -->
+  <!-- 数字なりなんなりランダムで選択(ジャンル)(リトルミスサンシャイン) -->
   <ons-template id="number-genre-page.html">
     <ons-page id="number-genre-page">
       <ons-toolbar>
@@ -222,14 +223,14 @@
           <ons-button class="number-genre-btn ff" id="3g">3</ons-button><br>
           <ons-button class="number-genre-btn ff" id="4g">4</ons-button><br>
           <ons-button class="number-genre-btn ff" id="5g">5</ons-button><br>
-          <ons-button id="top-btn">TOPへ</ons-button>
+          <ons-button id="top-btn6">TOPへ</ons-button>
           <br>
           <img id="run1" src="img/人4.png" style="width: 40px">
           <img id="run3" src="img/人2.png" style="width:50px">
           <img id="run2" src="img/人3.png" style="width: 35px">
           <img id="run4" src="img/人1.png" style="width: 20px">
           <img class="fuwafuwa" id="bus" src="img/バス.png" style="width: 200px">
-          
+
         </div>
       </div>
     </ons-page>
@@ -264,7 +265,9 @@
           <a class="next-btn"><img src="img/プレゼントのフリーアイコン素材.png"></a>
           <img id="bald" src="" style="display: none;">
         </div>
-        <ons-button id="top-btn">TOPへ</ons-button>
+        <div>
+          <ons-button id="top-btn7">TOPへ</ons-button>
+        </div>
       </div>
     </ons-page>
   </ons-template>
@@ -288,7 +291,7 @@
           <a class="icon" href="https://filmarks.com/"><img src="img/白熊アイコン3.png" alt="フィルマークスのサイト"></a>
           <a class="icon" id="IMDb-icon" href="https://www.imdb.com/"><img src="img/DBのアイコン.png" alt="IMDbのサイト"></a>
         </div>
-        <ons-button id="top-btn">TOPへ</ons-button>
+        <ons-button id="top-btn8">TOPへ</ons-button>
       </div>
     </ons-page>
   </ons-template>
