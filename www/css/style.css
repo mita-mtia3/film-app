@@ -36,7 +36,7 @@ body {
 }
 
 #first-page > div {
-  background: linear-gradient(to right, #42a0ff 0%, #42a0ff 10%, #ffb7b7 10%, #ffb7b7 90%, #42a0ff 90%, #42a0ff 100%);
+  background: linear-gradient(to right, #b8ffdb 0%, #b8ffdb 10%, #ffb7b7 10%, #ffb7b7 90%, #b8ffdb 90%, #b8ffdb 100%);
   opacity: 0.7;
 }
 
@@ -45,11 +45,12 @@ body {
 }
 
 #color-select-page > div {
-  background: #7fd9d2;
+  background: #eae5e3;
 }
 
 #mood-select-page > div {
-  background: #dbedf0;
+  background-image: url(../img/mood-img2.png);
+  background-size: cover;
 }
 
 #genre-select-page > div {
@@ -76,8 +77,20 @@ body {
   background: ;
 }
 
-.tap {
-  font-size: 32px;
+.above-top {
+  position: relative;
+  top: 130px;
+}
+#tap-btn {
+  /* color: #ffb7b7;
+  font-size: 32px; */
+  position: relative;
+  top: 130px;
+}
+
+.tap-here {
+  position: relative;
+  top: 120px;
 }
 
 #top-btn {
@@ -97,7 +110,8 @@ body {
   text-align: center;
   position: relative;
   margin: 0 auto;
-  background-color: #aeb5dc;
+  background-color: #fff;
+  color: #3e687d;
   width: 120px;
 
 }
@@ -108,7 +122,8 @@ body {
   text-align: center;
   position: relative;
   margin: 0 auto;
-  background-color: #aeb5dc;
+  background-color: #fff;
+  /* color: #3e687d; */
   width: 120px;
 }
 
@@ -154,7 +169,8 @@ body {
   padding-left: 30px;
   position: relative;
   margin: 0 auto;
-  background-color: #aeb5dc;
+  background-color: #fff;
+  color: #3e687d;
   width: 80%;
   
 }
@@ -166,9 +182,15 @@ body {
   padding-left: 30px;
   position: relative;
   margin: 0 auto;
-  background-color: #aeb5dc;
-  width: 75%;
-  
+  background-color: #fff;
+  color: #3e687d;
+  width: 75%; 
+}
+
+#boy {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
 }
 .number-color {
   text-align: center;
@@ -182,10 +204,10 @@ body {
   border-radius: 50%;
   background-color: #fff;
   color: #202020;
-  font-family: fantasy;
+  font-weight: bold;
 }
 
-.car {
+#car {
   position: absolute;
   bottom: 320px;
   opacity: 0.5;
@@ -193,7 +215,7 @@ body {
   width: 30px;
 }
 
-.taiya {
+#taiya {
   position: absolute;
   height: 150px;
   width: 18px;
@@ -201,7 +223,7 @@ body {
   bottom: 155px;
   opacity: 0.6;
 }
-.pistol {
+#pistol {
   position: absolute;
   right: 10px;
   bottom: 20px;
@@ -215,7 +237,8 @@ body {
   height: 45px;
   margin: 20px auto;
   border-radius: 50%;
-  background-color: #aeb5dc;
+  background-color: #fff;
+  color: #3e687d;
 }
 
 
@@ -228,7 +251,7 @@ body {
 }
 
 .next-btn {
-  display: none;
+  /* display: none; */
 }
 
 .back {
@@ -262,6 +285,40 @@ body {
   max-width: 50%;
   margin: 0 auto;
   text-align: center;
+}
+
+.fuwafuwa {
+  -webkit-animation:fuwafuwa 3s infinite linear alternate;
+  animation:fuwafuwa 3s infinite linear alternate;
+  }
+  
+  @-webkit-keyframes fuwafuwa {
+  0% {-webkit-transform:translate(0, 0) rotate(-5deg);}
+  50% {-webkit-transform:translate(0, -5px) rotate(0deg);}
+  100% {-webkit-transform:translate(0, 0)rotate(5deg);}
+  }
+  
+  @keyframes fuwafuwa {
+  0% {transform:translate(0, 0) rotate(-5deg);}
+  50% {transform:translate(0, -5px) rotate(0deg);}
+  100% {transform:translate(0, 0)rotate(5deg);}
+  }
+
+  .buruburu {
+    -webkit-animation:buruburu 0.1s infinite linear alternate;
+    animation:buruburu 0.1s infinite linear alternate;
+}
+
+@-webkit-keyframes buruburu {
+    0% {-webkit-transform:translate(0, 0) rotate(-3deg);}
+    50% {-webkit-transform:translate(0, -1px) rotate(0deg);}
+    100% {-webkit-transform:translate(0, 0)rotate(3deg);}
+}
+
+@keyframes buruburu {
+    0% {transform:translate(0, 0) rotate(-3deg);}
+    50% {transform:translate(0, -1px) rotate(0deg);}
+    100% {transform:translate(0, 0)rotate(3deg);}
 }
 
 

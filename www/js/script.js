@@ -1,4 +1,5 @@
 let state = {};
+let bald = {};
 
 // Page init event
 document.addEventListener('init', function (event) {
@@ -141,10 +142,11 @@ document.addEventListener('init', function (event) {
     let recommend = document.querySelector('#recommend-film-title');
     let srcUrl = `film-img/${infoElement.title}.jpg`;
     let recommendComment = document.querySelector('#recommend-comment');
+    let srcUrlActor = `bald-img/${infoElement.title}.jpg`;
     recommend.textContent = `『${infoElement.title}』`;
     document.getElementById('recommend-film-img').src = srcUrl;
     recommendComment.textContent = `(${infoElement.comment})`;
-    
+    document.getElementById('bald').src = srcUrlActor;
   })
 
   // baldキャストがいた("actor"に値がある)場合のみ表示したいページ
@@ -154,7 +156,6 @@ document.addEventListener('init', function (event) {
     // トップボタン押したら戻る（bald-cast-pageから最初の選択画面へ）
     page.querySelector('#top-btn').onclick = function () {
       document.querySelector('#navigator').popPage({ times: 5 });
-    
     };
   };
 
