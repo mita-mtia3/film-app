@@ -111,7 +111,9 @@ body {
 }
 
 #color-select-page > div {
-  background: #eae5e3;
+  /* background: #eae5e3; */
+  background-image: url(../img/laland4.png);
+  background-size: cover;
 }
 
 #mood-select-page > div {
@@ -144,23 +146,24 @@ body {
 }
 
 #recommend-page > div {
+  background: #54917f;
 }
 
 .above-top {
   position: relative;
-  top: 130px;
+  top: 150px;
   left: 10px;
 }
 #tap-btn {
   /* color: #ffb7b7;
   font-size: 32px; */
   position: relative;
-  top: 130px;
+  top: 150px;
 }
 
 .tap-here {
   position: relative;
-  top: 120px;
+  top: 140px;
 
 }
 
@@ -280,6 +283,11 @@ body {
   color: #202020;
   font-weight: bold;
 }
+#nyoro {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
 
 #car {
   position: absolute;
@@ -325,18 +333,28 @@ body {
   bottom: 80px;
 }
 
-.next-btn {
-  /* display: none; */
+.next-btn{
+  display: none;
 }
 
 .back {
   margin-bottom: 40px;
 }
 
+#recommend-back {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  background: white;
+}
 
 #recommend-film-title {
   font-size: 30px;
   font-weight: normal;
+  width: auto;
+  color: black;
+  opacity: 0.5;
+  background: aliceblue;
   
 }
 
@@ -349,6 +367,10 @@ body {
 #recommend-comment {
   font-size: 20px;
   font-weight: normal;
+  width: auto;
+  background: aliceblue;
+  opacity: 0.5;
+  color: black;
 }
 
 #bald-cast-name {

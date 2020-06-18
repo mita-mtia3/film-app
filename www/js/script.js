@@ -1,5 +1,4 @@
 let state = {};
-let bald = {};
 
 // Page init event
 document.addEventListener('init', function (event) {
@@ -143,10 +142,12 @@ document.addEventListener('init', function (event) {
     let srcUrl = `film-img/${infoElement.title}.jpg`;
     let recommendComment = document.querySelector('#recommend-comment');
     let srcUrlActor = `bald-img/${infoElement.title}.jpg`;
+    let allFilm = document.querySelector('#film-all');
     recommend.textContent = `『${infoElement.title}』`;
     document.getElementById('recommend-film-img').src = srcUrl;
     recommendComment.textContent = `(${infoElement.comment})`;
     document.getElementById('bald').src = srcUrlActor;
+    allFilm.textContent = infoElementArray;
   })
 
   // baldキャストがいた("actor"に値がある)場合のみ表示したいページ
