@@ -22,26 +22,92 @@ body {
   font-weight: bold;
 }
 
+#p-1, #p-2, #p-3, #p-4, #p-5, #p-6, #p-7 {
+  width: 200px;
+  margin: 0 auto;
+  background: white;
+  opacity: 0.6;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  color: black;
+}
+
+#p-1 {
+  width: 200px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+#p-2 {
+ width: 230px;
+ margin-top: 20px;
+ margin-bottom: 30px;
+}
+
+#p-3 {
+  width: 230px;
+  margin-bottom: 30px;
+}
+
+#p-4 {
+  width: 290px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#p-5 {
+  width: 230px;
+  line-height: 60px;
+  height: 60px;
+}
+
+#p-6 {
+  width: 230px;
+  height: 60px;
+  line-height: 60px;
+  opacity: 0.7;
+  background: #bee0c2;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+#p-7 {
+  width: 230px;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+
+
 .number-color-content, .number-genre-content, .number-mood-content {
   /* color: #; */
   font-size: 20px;
   font-weight: bold;
 }
 
-.fukidashi {
+/* .fukidashi {
   display: inline-block;
   width: 60%;
   margin: 0 auto;
   margin-bottom: 25px;
-}
+} */
 
 #first-page > div {
-  background: linear-gradient(to right, #b8ffdb 0%, #b8ffdb 10%, #ffb7b7 10%, #ffb7b7 90%, #b8ffdb 90%, #b8ffdb 100%);
+  /* background: linear-gradient(to right, #7b5544 0%, #7b5544 10%, #ffb18c 10%, #ffb18c 90%, #7b5544 90%, #7b5544 100%); */
+  /* opacity: 0.7; */
+  /* background: linear-gradient(to right, #6b3f31 0%, #6b3f31 10%, #fff462 10%, #fff462 90%, #6b3f31 90%, #6b3f31 100%);
   opacity: 0.7;
+  background: linear-gradient(to bottom, #6b3f31 0%, #6b3f31 3%, #fff 3%, #fff 5%, #6b3f31 5%, #6b3f31 6%, #fff 6%, #fff 8%, #6b3f31 8%, #6b3f31 9%, #fff 9%, #fff 11%, #6b3f31 11%, #6b3f31 14%, #d6a100 14%, #d6a100 ); */
+  background: linear-gradient(to bottom, #6f5436 0%, #6f5436 2%, #fff 2%, #fff 3%, #6f5436 3%, #6f5436 3.5%, #fff 3.5%, #fff 4.5%, #6f5436 4.5%, #6f5436 5%, #fff 5%, #fff 6%, #6f5436 6%, #6f5436 8%, #d6a100 8%, #d6a100 )
 }
 
 #select-page > div {
-  background: #ffe556;
+  background-image: url(../img/angel.png);
+  /* background: #ffe556; */
+  background-size: cover;
 }
 
 #color-select-page > div {
@@ -54,7 +120,9 @@ body {
 }
 
 #genre-select-page > div {
-  background: #e2bea3;
+  /* background: #e2bea3; */
+  background-image: url(../img/moonrise4.png);
+  background-size: cover;
 }
 
 #number-color-page > div {
@@ -63,7 +131,9 @@ body {
 }
 
 #number-mood-page > div {
-  background: #fff799;
+  background-image: url(../img/instantnuma.png);
+  background-size: cover;
+  /* background: #fff799; */
   /* background: linear-gradient(to bottom, #0f2350 0%, #164a84 30%, #4d4398 50%, #393f4c 90%, #393f4c 100%); */
   ;
 }
@@ -79,6 +149,7 @@ body {
 .above-top {
   position: relative;
   top: 130px;
+  left: 10px;
 }
 #tap-btn {
   /* color: #ffb7b7;
@@ -90,6 +161,7 @@ body {
 .tap-here {
   position: relative;
   top: 120px;
+
 }
 
 #top-btn1, #top-btn2, #top-btn3, #top-btn4, #top-btn5, #top-btn6, #top-btn7, #top-btn8 {
@@ -98,7 +170,12 @@ body {
   opacity: 0.7;
   border-radius: 45%;
   width: 150px;
-  margin: 10px auto;
+  margin: 20px auto;
+}
+
+#top-btn5 {
+  opacity: 0.7;
+  background-color: #004d25;
 }
 
 .select-btn {
@@ -236,6 +313,7 @@ body {
   border-radius: 50%;
   background-color: #fff;
   color: #3e687d;
+  border: 2px solid #009854;
 }
 
 
@@ -257,7 +335,7 @@ body {
 
 
 #recommend-film-title {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: normal;
   
 }
