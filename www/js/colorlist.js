@@ -1041,7 +1041,7 @@
     "title": "特攻野郎Aチーム THE MOVIE",
     "color": "B",
     "actor": "41",
-    "comment": "邦題が目障り"
+    "comment": "邦題に惑わされないで"
   },
   {
     "title": "不思議惑星キン・ザ・ザ",

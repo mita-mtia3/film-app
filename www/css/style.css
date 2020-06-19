@@ -105,48 +105,47 @@ body {
 }
 
 #select-page > div {
-  background-image: url(../img/angel.png);
+  background-image: url(../img/☆angel2.png);
   /* background: #ffe556; */
   background-size: cover;
 }
 
 #color-select-page > div {
   /* background: #eae5e3; */
-  background-image: url(../img/laland4.png);
+  background-image: url(../img/☆laland4.png);
   background-size: cover;
 }
 
 #mood-select-page > div {
-  background-image: url(../img/mood-img2.png);
+  background-image: url(../img/☆moonlight.png);
   background-size: cover;
 }
 
 #genre-select-page > div {
-  /* background: #e2bea3; */
-  background-image: url(../img/moonrise4.png);
+  background-image: url(../img/☆moonrise4.png);
   background-size: cover;
 }
 
 #number-color-page > div {
-  /* background: #ffb2b2; */
-  background: #ea5550;
+  background-image: url(../img/☆ブエナビスタ3.png);
+  background-size: cover;
 }
 
 #number-mood-page > div {
-  background-image: url(../img/instantnuma.png);
+  background-image: url(../img/☆instantnuma2.png);
   background-size: cover;
-  /* background: #fff799; */
-  /* background: linear-gradient(to bottom, #0f2350 0%, #164a84 30%, #4d4398 50%, #393f4c 90%, #393f4c 100%); */
-  ;
 }
 
 #number-genre-page > div {
-  /* background: #00ac97; */
   background: #ffe556;
 }
 
 #recommend-page > div {
-  background: #54917f;
+  /* background: #54917f; */
+  /* background: #abb1b5; */
+  background: #bfbec5;
+  /* background: #bcc7db; */
+  /* background: #b4ada9; */
 }
 
 .above-top {
@@ -235,10 +234,6 @@ body {
   color: gray;
 }
 
-
-
-
-
 .mood-select-btn {
   font-size: 20px;
   display: block;
@@ -264,11 +259,6 @@ body {
   width: 75%; 
 }
 
-#boy {
-  width: 30%;
-  position: absolute;
-  bottom: 0;
-}
 .number-color {
   text-align: center;
 }
@@ -283,33 +273,12 @@ body {
   color: #202020;
   font-weight: bold;
 }
-#nyoro {
- position: absolute;
- top: 0;
- left: 0;
+
+.number-color-btn {
+  border: 2px solid #ffdc00;
 }
 
-#car {
-  position: absolute;
-  bottom: 320px;
-  opacity: 0.5;
-  right: 26px;
-  width: 30px;
-}
 
-#taiya {
-  position: absolute;
-  height: 150px;
-  width: 18px;
-  right: 32px;
-  bottom: 155px;
-  opacity: 0.6;
-}
-#pistol {
-  position: absolute;
-  right: 10px;
-  bottom: 20px;
-}
 
 .number-mood-btn {
   display: inline-block;
@@ -341,36 +310,52 @@ body {
   margin-bottom: 40px;
 }
 
-#recommend-back {
-  width: 80%;
-  padding: 20px;
-  margin: 0 auto;
-  background: white;
-}
 
 #recommend-film-title {
   font-size: 30px;
   font-weight: normal;
   width: auto;
   color: black;
-  opacity: 0.5;
-  background: aliceblue;
-  
+  opacity: 0.7;
+  padding: 5px 25px 5px 10px;
+  /* background: aliceblue;   */
+  background: #e6eae6;
 }
 
-#recommend-film-img {
-  max-width: 50%;
+#stop {
+  position: relative;
+}
+
+#recommend-back {
+  width: 80%;
+  height: 320px;
   margin: 0 auto;
-  text-align: center;
+  background:#e6eae6;
+  opacity: 0.3;
+}
+
+ #recommend-film-img {
+  position: absolute; 
+  width: 150px;
+  top: 17%;
+  left: 29%;
+  
 }
 
 #recommend-comment {
   font-size: 20px;
   font-weight: normal;
   width: auto;
-  background: aliceblue;
-  opacity: 0.5;
+  /* background: aliceblue; */
+  background: #e6eae6;
+  opacity: 0.6;
   color: black;
+  animation: fadeIn 1s linear 0s 1 normal;
+}
+
+@keyframes fadeIn { 
+  0% {opacity: 0} 
+  100% {opacity: 0.6} 
 }
 
 #bald-cast-name {

@@ -30,13 +30,13 @@
   <ons-template id="first-page.html">
     <ons-page id="first-page">
       <div class="content" id="top-page">
-        <!--  <p>tapしてください</p> -->
         <a class="above-top"><img src="img/first-pageni.png"></a>
         <a class="fuwafuwa" id="tap-btn"><img src="img/映写機.png"></a>
         <a class="tap-here"><img src="img/first-pageni2.png"></a>
       </div>
     </ons-page>
   </ons-template>
+
   <!-- 選択ページ -->
   <ons-template id="select-page.html">
     <ons-page id="select-page">
@@ -46,10 +46,9 @@
         </div>
         <div class="center">Select</div>
       </ons-toolbar>
-
       <div class="content" style="text-align: center">
-        <div  id="p-1">
-        <p>選択してください</p>
+        <div id="p-1">
+          <p>選択してください</p>
         </div>
         <div>
           <ons-button class="select-btn ff" id="color-btn">色</ons-button><br>
@@ -59,7 +58,8 @@
           </div>
     </ons-page>
   </ons-template>
-  <!-- 色選択 （オーメン）-->
+
+  <!-- 色選択 （lalala）-->
   <ons-template id="color-select-page.html">
     <ons-page id="color-select-page">
       <ons-toolbar>
@@ -82,7 +82,6 @@
           <ons-button class="color-select-btn ff" id="black-btn" data-color="BL">Black</ons-button><br>
           <ons-button class="color-select-btn ff" id="other" data-color="N">Other</ons-button><br>
           <ons-button id="top-btn1">TOPへ</ons-button>
-          <!-- <img id="boy" src="img/色-back.png"> -->
         </div>
       </div>
     </ons-page>
@@ -118,7 +117,7 @@
     </ons-page>
   </ons-template>
 
-  <!-- ジャンルを選択 -->
+  <!-- ジャンルを選択 (moonrise)-->
   <ons-template id="genre-select-page.html">
     <ons-page id="genre-select-page">
       <ons-toolbar>
@@ -155,7 +154,7 @@
     </ons-page>
   </ons-template>
 
-  <!-- 数字なりなんなりランダムで選択(色)(ベイビードライバー) -->
+  <!-- 数字なりなんなりランダムで選択(色)(ブエナビスタ) -->
   <ons-template id="number-color-page.html">
     <ons-page id="number-color-page">
       <ons-toolbar>
@@ -168,23 +167,20 @@
       <div class="number-color-content" style="text-align: center">
         <div id="p-5">
           <p>1つ選択してください</p>
-          <img id="nyoro" src="img/nyoro.png">
         </div>
         <div>
-          <img class="" id="car" src="img/車.png">
           <ons-button class="number-color-btn ff" id="1c">1</ons-button><br>
           <ons-button class="number-color-btn ff" id="2c">2</ons-button><br>
           <ons-button class="number-color-btn ff" id="3c">3</ons-button><br>
           <ons-button class="number-color-btn ff" id="4c">4</ons-button><br>
           <ons-button class="number-color-btn ff" id="5c">5</ons-button><br>
           <ons-button id="top-btn4">TOPへ</ons-button>
-          <img class="" id="taiya" src="img/タイヤ.png">
-          <img class="" id="pistol" src="img/gun.png">
         </div>
       </div>
     </ons-page>
   </ons-template>
-  <!-- 数字なりなんなりランダムで選択(気分) -->
+
+  <!-- 数字なりなんなりランダムで選択(気分)（インスタント沼） -->
   <ons-template id="number-mood-page.html">
     <ons-page id="number-mood-page">
       <ons-toolbar>
@@ -193,7 +189,6 @@
         </div>
         <div class="center">Number</div>
       </ons-toolbar>
-
       <div class="number-mood-content" style="text-align: center">
         <div id="p-6">
           <p>1つ選択してください</p>
@@ -209,6 +204,7 @@
       </div>
     </ons-page>
   </ons-template>
+
   <!-- 数字なりなんなりランダムで選択(ジャンル)(リトルミスサンシャイン) -->
   <ons-template id="number-genre-page.html">
     <ons-page id="number-genre-page">
@@ -218,7 +214,6 @@
         </div>
         <div class="center">Number</div>
       </ons-toolbar>
-
       <div class="number-genre-content" style="text-align: center">
         <div id="p-7">
           <p>1つ選択してください</p>
@@ -250,61 +245,30 @@
         </div>
         <div class="center">Recommended</div>
       </ons-toolbar>
-
       <div class="content" style="text-align: center">
-
         <!-- 作品名を表示する -->
         <p id="recommend-film-title">『』</p>
-        <!-- 真ん中あたりに画像を出したい -->
-        <div id="recommend-back">
-          <img id="recommend-film-img" src=""></img>
+        <!-- 画像の表示 -->
+        <div id="stop">
+          <div id="recommend-back"></div>
+          <img id="recommend-film-img" src="">
         </div>
         <div>
           <p id="recommend-comment">()</p>
         </div>
         <div>
-          <a class="icon" href="https://filmarks.com/"><img src="img/白熊アイコン3.png" alt="フィルマークスのサイト"></a>
-          <a class="icon" id="tomato-icon" href="https://www.rottentomatoes.com/"><img src="img/トマトのアイコン.png"
+          <a class="icon" href="https://filmarks.com/"><img src="img/白熊アイコン.png" alt="フィルマークスのサイト"></a>
+          <a class="icon" id="tomato-icon" href="https://www.rottentomatoes.com/"><img src="img/トマトのアイコン4 (1).png"
               alt="ロッテントマトのサイト"></a>
-        </div>
-        <div>
-          <!-- 表示非表示切り替えたい -->
-          <a class="next-btn"><img src="img/プレゼントのフリーアイコン素材.png"></a>
-          <img id="bald" src="" style="display: none;">
         </div>
         <div>
           <ons-button id="top-btn7">TOPへ</ons-button>
         </div>
-        <div>
+        <!-- <div>
           <p id="film-all"></p>
-        </div>
-      </div>
-    </ons-page>
-  </ons-template>
-
-  <!-- とびきりの -->
-  <!-- あったりなかったり 基本は非表示-->
-  <!-- ※キャスト -->
-  <ons-template id="bald-cast-page.html">
-    <ons-page id="bald-cast-page">
-      <ons-toolbar>
-        <div class="left">
-          <ons-back-button>おすすめ</ons-back-button>
-        </div>
-        <div class="center">キャスト</div>
-      </ons-toolbar>
-
-      <div class="content" style="text-align: center">
-        <p id="bald-cast-name">☆</p>
-        <img id="bald-cast-img" src=""></img>
-        <div>
-          <a class="icon" href="https://filmarks.com/"><img src="img/白熊アイコン3.png" alt="フィルマークスのサイト"></a>
-          <a class="icon" id="IMDb-icon" href="https://www.imdb.com/"><img src="img/DBのアイコン.png" alt="IMDbのサイト"></a>
-        </div>
-        <ons-button id="top-btn8">TOPへ</ons-button>
+        </div> -->
       </div>
     </ons-page>
   </ons-template>
 </body>
-
 </html>
