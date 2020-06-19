@@ -8,6 +8,13 @@ body {
   font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 } 
 
+#top-page {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: #d6a100;
+  position: relative;
+}
 
 .center {
   color: #3e687d;
@@ -88,12 +95,7 @@ body {
   font-weight: bold;
 }
 
-/* .fukidashi {
-  display: inline-block;
-  width: 60%;
-  margin: 0 auto;
-  margin-bottom: 25px;
-} */
+
 
 #first-page > div {
   /* background: linear-gradient(to right, #7b5544 0%, #7b5544 10%, #ffb18c 10%, #ffb18c 90%, #7b5544 90%, #7b5544 100%); */
@@ -143,9 +145,12 @@ body {
 #recommend-page > div {
   /* background: #54917f; */
   /* background: #abb1b5; */
-  background: #bfbec5;
+  /* background: #bfbec5; */
   /* background: #bcc7db; */
   /* background: #b4ada9; */
+  /* background: #c0c5c2; */
+  background: #cbd0d3;
+  /* background: #d3d3d8; */
 }
 
 .above-top {
@@ -331,7 +336,7 @@ body {
   height: 320px;
   margin: 0 auto;
   background:#e6eae6;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
  #recommend-film-img {
@@ -353,20 +358,28 @@ body {
   animation: fadeIn 1s linear 0s 1 normal;
 }
 
+.border {
+  padding: 10px;
+  border-top: 7px dotted;
+  border-bottom: 7px dotted;
+  font-weight: normal;
+}
+
+#film-all {
+  font-size: 18px;
+  font-weight: normal;
+  list-style: circle;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 30px;
+  padding-bottom: 10px;
+}
+
 @keyframes fadeIn { 
   0% {opacity: 0} 
   100% {opacity: 0.6} 
 }
 
-#bald-cast-name {
-  font-size: 30px;
-}
-
-#bald-cast-img {
-  max-width: 50%;
-  margin: 0 auto;
-  text-align: center;
-}
 
 .fuwafuwa {
   -webkit-animation:fuwafuwa 3s infinite linear alternate;

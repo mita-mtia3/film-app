@@ -447,19 +447,19 @@
     "title": "クラウドアトラス",
     "genre": "2",
     "actor": "",
-    "comment": "繋がって全部線"
+    "comment": "繋がって線になる"
   },
   {
     "title": "クラウドアトラス",
     "genre": "4",
     "actor": "",
-    "comment": "繋がって全部線"
+    "comment": "繋がって線になる"
   },
   {
     "title": "クラウドアトラス",
     "genre": "12",
     "actor": "",
-    "comment": "繋がって全部線"
+    "comment": "繋がって線になる"
   },
   {
     "title": "グランド・ブダペスト・ホテル",

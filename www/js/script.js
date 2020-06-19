@@ -7,7 +7,7 @@ document.addEventListener('init', function (event) {
   // TOPページ
   if (page.matches('#first-page')) {
 
-    page.querySelector('#tap-btn').onclick = function () {
+    page.querySelector('#top-page').onclick = function () {
       document.querySelector('#navigator').pushPage('select-page.html');
     };
 
@@ -121,29 +121,40 @@ document.addEventListener('init', function (event) {
       document.querySelector('#navigator').popPage({ times: 4 });
     }
 
-  };
+    if (state.type === "color") {
+      infoElementArray = colorList.filter(element => element.color === state.color);
+      infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
+      var list = infoElementArray.map(element => element.title);
+      var listed = [];
+      for (var i = 0; i < list.length; i++) {
+        listed.push('<li>' + list[i] + '</li>');
+      }
+    } else if (state.type === "mood") {
+      infoElementArray = moodList.filter(element => element.mood === state.mood);
+      infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
+      var list = infoElementArray.map(element => element.title);
+      var listed = [];
+      for (var i = 0; i < list.length; i++) {
+        listed.push('<li>' + list[i] + '</li>');
+      }
+    } else if (state.type === "genre") {
+      infoElementArray = genreList.filter(element => element.genre === state.genre);
+      infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
+      var list = infoElementArray.map(element => element.title);
+      var listed = [];
+      for (var i = 0; i < list.length; i++) {
+        listed.push('<li>' + list[i] + '</li>');
+      }
+    };
 
-  if (state.type === "color") {
-    infoElementArray = colorList.filter(element => element.color === state.color);
-    infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
-  } else if (state.type === "mood") {
-    infoElementArray = moodList.filter(element => element.mood === state.mood);
-    infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
-  } else if (state.type === "genre") {
-    infoElementArray = genreList.filter(element => element.genre === state.genre);
-    infoElement = infoElementArray[Math.floor(Math.random() * infoElementArray.length)];
+    let recommend = document.querySelector('#recommend-film-title');
+    let srcUrl = `film-img/${infoElement.title}.jpg`;
+    let recommendComment = document.querySelector('#recommend-comment');
+    recommend.textContent = `『${infoElement.title}』`;
+    document.getElementById('recommend-film-img').src = srcUrl;
+    recommendComment.textContent = `(${infoElement.comment})`;
+    document.getElementById('film-all').innerHTML = listed.join('');
   };
-
-  let recommend = document.querySelector('#recommend-film-title');
-  let srcUrl = `film-img/${infoElement.title}.jpg`;
-  let recommendComment = document.querySelector('#recommend-comment');
-  let srcUrlActor = `bald-img/${infoElement.title}.jpg`;
-  // let allFilm = document.querySelector('#film-all');
-  recommend.textContent = `『${infoElement.title}』`;
-  document.getElementById('recommend-film-img').src = srcUrl;
-  recommendComment.textContent = `(${infoElement.comment})`;
-  document.getElementById('bald').src = srcUrlActor;
-  // allFilm.textContent = infoElementArray;
 })
 
 
