@@ -96,7 +96,6 @@ body {
 }
 
 
-
 #first-page > div {
   /* background: linear-gradient(to right, #7b5544 0%, #7b5544 10%, #ffb18c 10%, #ffb18c 90%, #7b5544 90%, #7b5544 100%); */
   /* opacity: 0.7; */
@@ -108,12 +107,10 @@ body {
 
 #select-page > div {
   background-image: url(../img/☆angel2.png);
-  /* background: #ffe556; */
   background-size: cover;
 }
 
 #color-select-page > div {
-  /* background: #eae5e3; */
   background-image: url(../img/☆laland4.png);
   background-size: cover;
 }
@@ -159,8 +156,6 @@ body {
   left: 10px;
 }
 #tap-btn {
-  /* color: #ffb7b7;
-  font-size: 32px; */
   position: relative;
   top: 150px;
 }
@@ -194,7 +189,6 @@ body {
   background-color: #fff;
   color: #3e687d;
   width: 120px;
-
 }
 
 .color-select-btn {
@@ -204,7 +198,6 @@ body {
   position: relative;
   margin: 0 auto;
   background-color: #fff;
-  /* color: #3e687d; */
   width: 120px;
 }
 
@@ -298,13 +291,10 @@ body {
   border: 2px solid #009854;
 }
 
-
-
 /* .icon {
   display: inline-block;
   bottom: 80px;
 } */
-
 
 #tomato-icon {
   margin-left: 50px;
@@ -318,7 +308,6 @@ body {
   margin-bottom: 40px;
 }
 
-
 #recommend-film-title {
   font-size: 30px;
   font-weight: normal;
@@ -326,7 +315,6 @@ body {
   color: black;
   opacity: 0.7;
   padding: 5px 25px 5px 10px;
-  /* background: aliceblue;   */
   background: #e6eae6;
 }
 
@@ -335,8 +323,8 @@ body {
 }
 
 #recommend-back {
-  width: 80%;
-  height: 320px;
+  width: 70%;
+  height: 300px;
   margin: 0 auto;
   background:#e6eae6;
   opacity: 0.4;
@@ -345,16 +333,14 @@ body {
  #recommend-film-img {
   position: absolute; 
   width: 150px;
-  top: 17%;
-  left: 29%;
-  
+  top: 14%;
+  left: 30%;
 }
 
 #recommend-comment {
   font-size: 20px;
   font-weight: normal;
   width: auto;
-  /* background: aliceblue; */
   background: #e6eae6;
   opacity: 0.6;
   color: black;
@@ -384,40 +370,56 @@ body {
 }
 
 
-.fuwafuwa {
-  -webkit-animation:fuwafuwa 3s infinite linear alternate;
-  animation:fuwafuwa 3s infinite linear alternate;
+.move1 {
+  -webkit-animation:move1 3s infinite linear alternate;
+  animation:move1 3s infinite linear alternate;
   }
   
-  @-webkit-keyframes fuwafuwa {
+  @-webkit-keyframes move1 {
   0% {-webkit-transform:translate(0, 0) rotate(-5deg);}
   50% {-webkit-transform:translate(0, -5px) rotate(0deg);}
   100% {-webkit-transform:translate(0, 0)rotate(5deg);}
   }
   
-  @keyframes fuwafuwa {
+  @keyframes move1 {
   0% {transform:translate(0, 0) rotate(-5deg);}
   50% {transform:translate(0, -5px) rotate(0deg);}
   100% {transform:translate(0, 0)rotate(5deg);}
   }
 
-  .buruburu {
-    -webkit-animation:buruburu 0.3s infinite linear alternate;
-    animation:buruburu 0.3s infinite linear alternate;
+  .move2 {
+    -webkit-animation:move2 0.3s infinite linear alternate;
+    animation:move2 0.3s infinite linear alternate;
 }
 
-@-webkit-keyframes buruburu {
+@-webkit-keyframes move2 {
     0% {-webkit-transform:translate(0, 0) rotate(-3deg);}
     50% {-webkit-transform:translate(0, -1px) rotate(0deg);}
     100% {-webkit-transform:translate(0, 0)rotate(3deg);}
 }
 
-@keyframes buruburu {
+@keyframes move2 {
     0% {transform:translate(0, 0) rotate(-3deg);}
     50% {transform:translate(0, -1px) rotate(0deg);}
     100% {transform:translate(0, 0)rotate(3deg);}
 }
 
+.move3 {
+  -webkit-animation:move3 0.3s infinite linear alternate;
+  animation:move3 0.3s infinite linear alternate;
+}
+
+@-webkit-keyframes move3 {
+  0% {-webkit-transform:translate(0, 0) rotate(-3deg);}
+  50% {-webkit-transform:translate(-1px, 0) rotate(0deg);}
+  100% {-webkit-transform:translate(0, 0)rotate(3deg);}
+}
+
+@keyframes move3 {
+  0% {transform:translate(0, 0) rotate(-3deg);}
+  50% {transform:translate(-1px, 0) rotate(0deg);}
+  100% {transform:translate(0, 0)rotate(3deg);}
+}
 
 
 
