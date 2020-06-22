@@ -300,11 +300,14 @@ body {
 
 
 
-.icon {
+/* .icon {
   display: inline-block;
-  margin-left: 40px;
-  margin-right: 40px;
   bottom: 80px;
+} */
+
+
+#tomato-icon {
+  margin-left: 50px;
 }
 
 .next-btn{
@@ -399,8 +402,8 @@ body {
   }
 
   .buruburu {
-    -webkit-animation:buruburu 0.1s infinite linear alternate;
-    animation:buruburu 0.1s infinite linear alternate;
+    -webkit-animation:buruburu 0.3s infinite linear alternate;
+    animation:buruburu 0.3s infinite linear alternate;
 }
 
 @-webkit-keyframes buruburu {
